@@ -336,35 +336,25 @@ footer a:hover{text-decoration:underline}
   body.has-results.scrolled main{margin-top:16px}
   body.has-results.scrolled .club-header{top:48px}
   .card{padding:12px; border-radius:12px; margin-bottom:12px}
-  .club-header{padding:16px 18px}
-  .club-name{font-size:20px}
-  .club-kpis{grid-template-columns:repeat(3,1fr); gap:8px}
-  .club-kpi{padding:10px 12px}
-  .club-kpi .v{font-size:18px}
-  .club-kpi .k{font-size:10px}
+  .club-header{padding:12px 14px}
+  .club-name{font-size:18px; margin-bottom:10px}
+  .club-kpis{grid-template-columns:repeat(4,1fr); gap:6px}
+  .club-kpi{padding:8px 6px}
+  .club-kpi .v{font-size:16px}
+  .club-kpi .k{font-size:9px}
+  .club-kpi .kpi-sub{font-size:9px; margin-top:1px}
   .club-filters{gap:10px}
   .club-filters .field-cat{max-width:none}
-  /* Table : masquer Années(4), % club V(7), % club P(9), Moy.(10) */
   .ranking-table{font-size:12px}
   .ranking-table th,.ranking-table td{padding:6px 5px}
   .ranking-table th{top:unset}
-  .ranking-table th:nth-child(4),.ranking-table td:nth-child(4),
-  .ranking-table th:nth-child(7),.ranking-table td:nth-child(7),
-  .ranking-table th:nth-child(9),.ranking-table td:nth-child(9),
-  .ranking-table th:nth-child(10),.ranking-table td:nth-child(10){display:none}
-  .ranking-table td:nth-child(3){font-size:11px}
   .ranking-table th:first-child,.ranking-table td:first-child{min-width:28px}
   .ranking-table th:nth-child(2),.ranking-table td:nth-child(2){min-width:100px}
   .ranking-table th:nth-child(3),.ranking-table td:nth-child(3){min-width:60px}
   #backToTop{bottom:16px; right:14px; width:40px; height:40px; font-size:18px}
 }
 @media(max-width:400px){
-  .club-kpis{grid-template-columns:repeat(2,1fr)}
   .cat-grid{grid-template-columns:1fr}
-  /* Sur très petit écran : masquer aussi Catégorie(3) et Podiums(8) */
-  .ranking-table th:nth-child(3),.ranking-table td:nth-child(3),
-  .ranking-table th:nth-child(8),.ranking-table td:nth-child(8){display:none}
-  .club-kpis{grid-template-columns:repeat(2,1fr)}
 }
 </style>
 </head>
