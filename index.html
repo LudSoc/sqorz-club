@@ -357,6 +357,24 @@ footer a:hover{text-decoration:underline}
 @media(max-width:400px){
   .cat-grid{grid-template-columns:1fr}
 }
+
+/* Tab bar */
+#tabBar{display:flex; gap:4px; margin-bottom:18px; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:4px; box-shadow:var(--shadow)}
+.tab-btn{
+  flex:1; font:inherit; font-size:13px; font-weight:600; cursor:pointer;
+  padding:9px 16px; border-radius:calc(var(--radius) - 4px); border:none;
+  background:transparent; color:var(--muted);
+  transition:background .15s, color .15s;
+}
+.tab-btn:hover{background:var(--card-soft); color:var(--ink)}
+.tab-btn.active{background:var(--accent); color:#fff; box-shadow:0 2px 8px color-mix(in srgb,var(--accent) 40%,transparent)}
+
+/* Ranking section */
+.ranking-club-row td{cursor:pointer}
+.ranking-club-row:hover td{background:var(--accent-soft)}
+.ranking-club-row td:nth-child(2){color:var(--accent-hi)}
+.ranking-club-row.hl td{background:color-mix(in srgb,var(--accent) 14%,var(--card)) !important}
+.ranking-club-row.hl td:nth-child(2){font-weight:800}
 </style>
 </head>
 <body>
@@ -381,6 +399,10 @@ footer a:hover{text-decoration:underline}
 </div>
 
 <main>
+  <div id="tabBar" hidden>
+    <button class="tab-btn active" data-tab="club">Fiche club</button>
+    <button class="tab-btn" data-tab="ranking">Classement général</button>
+  </div>
   <div class="card filters" id="searchCard">
     <div class="autocomplete-wrap">
       <label for="clubInp">Club</label>
@@ -392,6 +414,7 @@ footer a:hover{text-decoration:underline}
   </div>
 
   <div id="results" aria-live="polite"></div>
+  <div id="rankingSection" hidden></div>
 </main>
 
 <footer>
@@ -594,6 +617,12 @@ footer a:hover{text-decoration:underline}
   let catSectionOpen = false;
   let sortCol        = 'wins';
   let sortDir        = 'desc';
+  let activeTab        = 'club';
+  let rankingYear      = String(new Date().getFullYear());
+  let rankingSortCol   = 'wins';
+  let rankingSortDir   = 'desc';
+  let rankingSearch    = '';
+  let rankingSearchName = '';
 
   // --- DOM ---
   const statusEl  = document.getElementById('status');
@@ -624,12 +653,17 @@ footer a:hover{text-decoration:underline}
       clubInp.disabled = false;
       clubInp.focus();
       setStatus(`${clubsMap.size} clubs disponibles — tapez pour chercher.`);
+      document.getElementById('tabBar').hidden = false;
     } catch (e) {
       setStatus('Impossible de charger les données : ' + humanError(e), true);
       retryBtn.hidden = false;
     }
   }
   retryBtn.onclick = loadIndex;
+
+  document.getElementById('tabBar').querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+  });
 
   // --- Autocomplétion ---
   let suggHighlight = -1;
@@ -1315,6 +1349,248 @@ footer a:hover{text-decoration:underline}
     else if (y < 30) document.body.classList.remove('scrolled');
   }, { passive: true });
   backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // --- Classement général : stats par club ---
+  function buildAllClubsStats(year) {
+    const clubData = new Map();
+    for (const ev of (pilotsIndex.events || [])) {
+      const evYear = (ev.event.eventDate || '').slice(0, 4);
+      if (year && evYear !== year) continue;
+      for (const cls of (ev.classes || [])) {
+        for (const c of (cls.competitors || [])) {
+          const gn = c.groupName || '';
+          if (!gn) continue;
+          const key = normClub(gn);
+          if (!clubData.has(key)) clubData.set(key, { wins: 0, podiums: 0, entries: 0, pilotKeys: new Set(), rankSum: 0, rankCount: 0 });
+          const d = clubData.get(key);
+          d.entries++;
+          const pk = norm((c.firstName || '') + ' ' + (c.lastName || ''));
+          if (pk) d.pilotKeys.add(pk);
+          if (typeof c.rank === 'number') {
+            if (c.rank === 1) d.wins++;
+            if (c.rank <= 3) d.podiums++;
+            d.rankSum += c.rank;
+            d.rankCount++;
+          }
+        }
+      }
+    }
+    return [...clubData.entries()].map(([key, d]) => ({
+      key,
+      displayName: clubsMap.get(key)?.displayName || key,
+      pilotCount:  d.pilotKeys.size,
+      wins:        d.wins,
+      podiums:     d.podiums,
+      entries:     d.entries,
+      winRate:     d.entries > 0 ? d.wins / d.entries : 0,
+      podiumRate:  d.entries > 0 ? d.podiums / d.entries : 0,
+      avgRank:     d.rankCount > 0 ? d.rankSum / d.rankCount : null,
+    }));
+  }
+
+  function sortedClubs(clubs) {
+    return [...clubs].sort((a, b) => {
+      let av, bv;
+      switch (rankingSortCol) {
+        case 'name':     av = a.displayName.toLowerCase(); bv = b.displayName.toLowerCase(); break;
+        case 'pilots':   av = a.pilotCount;  bv = b.pilotCount;  break;
+        case 'entries':  av = a.entries;     bv = b.entries;     break;
+        case 'wins':     av = a.wins;        bv = b.wins;        break;
+        case 'winRate':  av = a.winRate;     bv = b.winRate;     break;
+        case 'podiums':  av = a.podiums;     bv = b.podiums;     break;
+        case 'podRate':  av = a.podiumRate;  bv = b.podiumRate;  break;
+        case 'avgRank':  av = a.avgRank ?? 9999; bv = b.avgRank ?? 9999; break;
+        default: return 0;
+      }
+      const cmp = typeof av === 'string' ? av.localeCompare(bv, 'fr') : av - bv;
+      return rankingSortDir === 'asc' ? cmp : -cmp;
+    });
+  }
+
+  function renderRanking() {
+    const clubs  = buildAllClubsStats(rankingYear);
+    const sorted = sortedClubs(clubs);
+    const rankingSection = document.getElementById('rankingSection');
+
+    const allYears = [...new Set(
+      (pilotsIndex.events || []).map(ev => (ev.event.eventDate || '').slice(0, 4)).filter(Boolean)
+    )].sort().reverse();
+
+    const yearPillsHtml = allYears.map(y =>
+      `<button class="yp-btn${rankingYear === y ? ' active' : ''}" data-ry="${escape(y)}">${escape(y)}</button>`
+    ).join('');
+
+    const clearBtnHtml = rankingSearch
+      ? `<button class="yp-btn" id="rankingSearchClear" title="Effacer la recherche" style="flex-shrink:0">×</button>`
+      : '';
+
+    const yearBarHtml = `<div class="card club-filters" style="flex-wrap:wrap;gap:16px;align-items:flex-end">
+      <div class="field">
+        <label>Année</label>
+        <div class="year-pills">
+          <button class="yp-btn${!rankingYear ? ' active' : ''}" data-ry="">Toutes</button>
+          ${yearPillsHtml}
+        </div>
+      </div>
+      <div class="field" style="flex:1 1 200px;min-width:180px">
+        <label>Rechercher un club</label>
+        <div style="display:flex;gap:6px;align-items:center">
+          <div class="autocomplete-wrap" style="flex:1">
+            <input class="control" id="rankingSearchInp" type="text" placeholder="Nom du club…" autocomplete="off" value="${escape(rankingSearchName)}">
+            <div class="suggestions" id="rankingSuggestions" role="listbox"></div>
+          </div>
+          ${clearBtnHtml}
+        </div>
+      </div>
+    </div>`;
+
+    const rCols = [
+      { key: null,       label: '#',         nosort: true },
+      { key: 'name',     label: 'Club' },
+      { key: 'pilots',   label: 'Pilotes',   title: 'Pilotes actifs' },
+      { key: 'entries',  label: 'Particip.', title: 'Participations' },
+      { key: 'wins',     label: 'Victoires' },
+      { key: 'winRate',  label: '% V',       title: '% de victoires' },
+      { key: 'podiums',  label: 'Podiums' },
+      { key: 'podRate',  label: '% P',       title: '% de podiums' },
+      { key: 'avgRank',  label: 'Moy.',      title: 'Classement moyen' },
+    ];
+
+    const thHtml = rCols.map(col => {
+      if (col.nosort) return `<th class="no-sort">${escape(col.label)}</th>`;
+      const isSorted = col.key === rankingSortCol;
+      const arrow = isSorted ? ` ${rankingSortDir === 'asc' ? '▲' : '▼'}` : '';
+      return `<th class="${isSorted ? 'sorted' : ''}" data-rcol="${col.key}" title="${escape(col.title || col.label)}">${escape(col.label)}${arrow}</th>`;
+    }).join('');
+
+    let tableContent;
+    if (sorted.length === 0) {
+      const yearLabel = rankingYear || 'toutes les années';
+      tableContent = `<div class="empty-state" style="padding:32px;text-align:center;color:var(--muted)">Aucune donnée pour ${escape(yearLabel)}.</div>`;
+    } else {
+      const rowsHtml = sorted.map((club, i) => {
+        const rank = i + 1;
+        const rankCell = rank === 1 ? `<span class="rpill r1">1</span>`
+                       : rank === 2 ? `<span class="rpill r2">2</span>`
+                       : rank === 3 ? `<span class="rpill r3">3</span>`
+                       : rank;
+        const winsCell = club.wins > 0 ? `<span class="wins-badge">${club.wins}</span>` : '0';
+        const avg = club.avgRank != null ? club.avgRank.toFixed(1) : '—';
+        const hlClass = club.key === rankingSearch ? ' hl' : '';
+        return `<tr class="pilot-row ranking-club-row${hlClass}" data-key="${escape(club.key)}" title="Voir la fiche de ${escape(club.displayName)}">
+          <td>${rankCell}</td>
+          <td style="text-align:left">${escape(club.displayName)}</td>
+          <td>${club.pilotCount}</td>
+          <td>${club.entries}</td>
+          <td>${winsCell}</td>
+          <td style="font-size:11px;color:var(--muted)">${Math.round(club.winRate * 100)}%</td>
+          <td>${club.podiums}</td>
+          <td style="font-size:11px;color:var(--muted)">${Math.round(club.podiumRate * 100)}%</td>
+          <td>${avg}</td>
+        </tr>`;
+      }).join('');
+      tableContent = `<div class="table-scroll"><table class="ranking-table">
+        <thead><tr>${thHtml}</tr></thead>
+        <tbody>${rowsHtml}</tbody>
+      </table></div>`;
+    }
+
+    rankingSection.innerHTML = yearBarHtml + `<div class="card table-card">${tableContent}</div>`;
+
+    // Année
+    rankingSection.querySelectorAll('[data-ry]').forEach(btn => {
+      btn.addEventListener('click', () => { rankingYear = btn.dataset.ry; renderRanking(); });
+    });
+
+    // Tri
+    rankingSection.querySelectorAll('th[data-rcol]').forEach(th => {
+      th.addEventListener('click', () => {
+        const col = th.dataset.rcol;
+        if (col === rankingSortCol) {
+          rankingSortDir = rankingSortDir === 'asc' ? 'desc' : 'asc';
+        } else {
+          rankingSortCol = col;
+          rankingSortDir = col === 'name' || col === 'avgRank' ? 'asc' : 'desc';
+        }
+        renderRanking();
+      });
+    });
+
+    // Clic ligne → fiche club
+    rankingSection.querySelectorAll('.ranking-club-row').forEach(row => {
+      row.addEventListener('click', () => {
+        switchTab('club');
+        selectClub(row.dataset.key);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+
+    // Recherche autocomplete
+    const searchInp  = rankingSection.querySelector('#rankingSearchInp');
+    const suggestEl2 = rankingSection.querySelector('#rankingSuggestions');
+
+    function showRankingSuggestions(query) {
+      if (!query.trim()) { suggestEl2.className = 'suggestions'; return; }
+      const q = normClub(query);
+      const matches = sorted.filter(c => normClub(c.displayName).includes(q)).slice(0, 10);
+      if (matches.length === 0) {
+        suggestEl2.innerHTML = `<div class="suggestion-empty">Aucun club trouvé pour « ${escape(query)} »</div>`;
+      } else {
+        suggestEl2.innerHTML = matches.map(c => {
+          const rank = sorted.findIndex(sc => sc.key === c.key) + 1;
+          return `<div class="suggestion-item" role="option" data-key="${escape(c.key)}" data-name="${escape(c.displayName)}">
+            <span>${escape(c.displayName)}</span>
+            <span class="sug-count">#${rank}</span>
+          </div>`;
+        }).join('');
+        suggestEl2.querySelectorAll('.suggestion-item').forEach(el => {
+          el.addEventListener('mousedown', e => {
+            e.preventDefault();
+            rankingSearch     = el.dataset.key;
+            rankingSearchName = el.dataset.name;
+            renderRanking();
+            setTimeout(() => {
+              const hlRow = rankingSection.querySelector('.ranking-club-row.hl');
+              if (hlRow) hlRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 50);
+          });
+        });
+      }
+      suggestEl2.className = 'suggestions open';
+    }
+
+    searchInp.addEventListener('input',  () => showRankingSuggestions(searchInp.value));
+    searchInp.addEventListener('focus',  () => { if (searchInp.value) showRankingSuggestions(searchInp.value); });
+    searchInp.addEventListener('blur',   () => setTimeout(() => { suggestEl2.className = 'suggestions'; }, 150));
+
+    const clearBtn = rankingSection.querySelector('#rankingSearchClear');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        rankingSearch = '';
+        rankingSearchName = '';
+        renderRanking();
+      });
+    }
+
+    // Scroll vers la ligne mise en avant
+    if (rankingSearch) {
+      setTimeout(() => {
+        const hlRow = rankingSection.querySelector('.ranking-club-row.hl');
+        if (hlRow) hlRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 50);
+    }
+  }
+
+  function switchTab(tab) {
+    activeTab = tab;
+    document.getElementById('tabBar').querySelectorAll('.tab-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.tab === tab);
+    });
+    document.getElementById('searchCard').hidden   = tab !== 'club';
+    document.getElementById('results').hidden      = tab !== 'club';
+    document.getElementById('rankingSection').hidden = tab !== 'ranking';
+    if (tab === 'ranking') renderRanking();
+  }
 
   // --- Init ---
   loadIndex().then(() => {
