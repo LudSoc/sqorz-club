@@ -1221,7 +1221,7 @@ footer a:hover{text-decoration:underline}
                      : rank === 2 ? `<span class="rpill r2">2</span>`
                      : rank === 3 ? `<span class="rpill r3">3</span>`
                      : rank;
-      const pilotUrl = `${SQORZ_STATS_BASE}?q=${encodeURIComponent(pilot.firstName)}+${encodeURIComponent(pilot.lastName)}`;
+      const pilotUrl = `${SQORZ_STATS_BASE}?name=${encodeURIComponent(pilot.firstName + ' ' + pilot.lastName)}`;
       const nameCell = `<a class="pilot-link" href="${escape(pilotUrl)}" target="_blank" rel="noopener noreferrer">${escape(pilot.name)}</a>`;
       const winsCell = s.wins > 0 ? `<span class="wins-badge">${s.wins}</span>` : '0';
       const avg      = s.avgRank  != null ? s.avgRank.toFixed(1) : '—';
