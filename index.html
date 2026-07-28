@@ -183,6 +183,8 @@ input.control, select.control{width:100%}
 .club-kpi.silver{--kpi-color:var(--silver)}
 .club-kpi.mint{--kpi-color:var(--mint)}
 .club-kpi.teal{--kpi-color:var(--teal)}
+.club-kpi.lime{--kpi-color:var(--lime)}
+.club-kpi.lavender{--kpi-color:var(--lavender)}
 
 /* Filters bar */
 .club-filters{display:flex; gap:16px; flex-wrap:wrap; align-items:flex-end; padding:16px 18px}
@@ -202,6 +204,7 @@ input.control, select.control{width:100%}
 
 /* Table */
 .table-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch}
+.table-card{padding:0; overflow:clip}
 .ranking-table{width:100%; border-collapse:collapse; font-size:12.5px; min-width:520px}
 .ranking-table th{
   cursor:pointer; user-select:none; background:var(--card-soft);
@@ -329,7 +332,7 @@ footer a:hover{text-decoration:underline}
   .club-kpi .k{font-size:10px}
   .club-filters{gap:10px}
   .club-filters .field-cat{max-width:none}
-  /* Table : masquer Années(4), % club V(7), % club P(9), Meilleur(10) */
+  /* Table : masquer Années(4), % club V(7), % club P(9), Moy.(10) */
   .ranking-table{min-width:0; font-size:12px}
   .ranking-table th,.ranking-table td{padding:6px 5px}
   .ranking-table th{top:unset}
@@ -338,6 +341,9 @@ footer a:hover{text-decoration:underline}
   .ranking-table th:nth-child(9),.ranking-table td:nth-child(9),
   .ranking-table th:nth-child(10),.ranking-table td:nth-child(10){display:none}
   .ranking-table td:nth-child(3){font-size:11px}
+  .ranking-table th:first-child,.ranking-table td:first-child{min-width:28px}
+  .ranking-table th:nth-child(2),.ranking-table td:nth-child(2){min-width:100px}
+  .ranking-table th:nth-child(3),.ranking-table td:nth-child(3){min-width:60px}
   #backToTop{bottom:16px; right:14px; width:40px; height:40px; font-size:18px}
 }
 @media(max-width:400px){
@@ -707,10 +713,29 @@ footer a:hover{text-decoration:underline}
     sortCol        = 'wins';
     sortDir    = 'desc';
     renderResults();
+    pushUrlState(key);  // ← ajout
   }
 
   // --- Exposition des variables pour debug console ---
   window._getState = () => ({ yearFilter: [...yearFilter], catFilter, selectedClubKey });
+
+  // --- URL state ---
+  function parseUrlState() {
+    const p = new URLSearchParams(location.search);
+    return { club: p.get('club') || '' };
+  }
+  function buildUrl(key) {
+    const u = new URL(location.href);
+    if (key) u.searchParams.set('club', key);
+    else u.searchParams.delete('club');
+    return u.pathname + (u.search || '');
+  }
+  function pushUrlState(key) {
+    const newUrl = buildUrl(key);
+    const cur = location.pathname + location.search;
+    if (newUrl === cur) history.replaceState(null, '', newUrl);
+    else history.pushState(null, '', newUrl);
+  }
 
   // --- Debug : inspecte un pilote par nom normalisé ---
   window._debugPilot = function(firstName, lastName) {
@@ -780,9 +805,9 @@ footer a:hover{text-decoration:underline}
   };
 
   // --- Construction des données pilotes filtrées ---
-  function buildPilotsData(ignoreCatFilter = false) {
+  function buildPilotsData(ignoreCatFilter = false, ignoreYearFilter = false) {
     if (!selectedClubKey || !pilotsIndex) return [];
-    const yearsActive = yearFilter.size > 0;
+    const yearsActive = !ignoreYearFilter && yearFilter.size > 0;
     const pilotMap = new Map();
 
     for (const ev of (pilotsIndex.events || [])) {
@@ -855,6 +880,140 @@ footer a:hover{text-decoration:underline}
     });
   }
 
+  // --- Stats annuelles pour le graphe de progression ---
+  function buildYearlyStats() {
+    const allPilots = buildPilotsData(false, true);
+    const yearMap = new Map();
+    for (const pilot of allPilots) {
+      for (const m of pilot.matches) {
+        const year = (m.event.eventDate || '').slice(0, 4);
+        if (!year) continue;
+        if (!yearMap.has(year)) yearMap.set(year, { wins: 0, entries: 0, pilotKeys: new Set() });
+        const yd = yearMap.get(year);
+        yd.entries++;
+        if (typeof m.competitor.rank === 'number' && m.competitor.rank === 1) yd.wins++;
+        yd.pilotKeys.add(pilot.key);
+      }
+    }
+    return [...yearMap.entries()]
+      .map(([year, d]) => ({
+        year,
+        wins: d.wins,
+        entries: d.entries,
+        winRate: d.entries > 0 ? 100 * d.wins / d.entries : 0,
+        pilotCount: d.pilotKeys.size,
+      }))
+      .sort((a, b) => a.year.localeCompare(b.year));
+  }
+
+  // --- Taux de finale ---
+  function countFinaleEntries(pilots) {
+    let count = 0;
+    for (const pilot of pilots) {
+      for (const m of pilot.matches) {
+        if ((m.competitor.competitorRankDetails || []).some(isFinalPhase)) count++;
+      }
+    }
+    return count;
+  }
+
+  // --- Données catégories (extrait pour réutilisation dans les KPIs) ---
+  function buildCatsData(pilots) {
+    const catMap = new Map();
+    for (const pilot of pilots) {
+      for (const m of pilot.matches) {
+        const code   = m.cls.perpetualClassCode || m.cls.className || '?';
+        const grp    = CODE_TO_GROUP.get(code);
+        const catKey = grp ? grp.key : code;
+        const label  = grp ? grp.label : (CLASS_NAMES[code] || code);
+        if (!catMap.has(catKey)) catMap.set(catKey, { label, wins: 0, podiums: 0, total: 0, pilotKeys: new Set() });
+        const bucket = catMap.get(catKey);
+        if (typeof m.competitor.rank === 'number') {
+          if (m.competitor.rank === 1) bucket.wins++;
+          if (m.competitor.rank <= 3) bucket.podiums++;
+        }
+        bucket.total++;
+        bucket.pilotKeys.add(norm((m.competitor.firstName || '') + ' ' + (m.competitor.lastName || '')));
+      }
+    }
+    return [...catMap.entries()]
+      .map(([catKey, b]) => ({
+        code:       catKey,
+        label:      b.label,
+        pilotCount: b.pilotKeys.size,
+        wins:       b.wins,
+        podiums:    b.podiums,
+        rate:       b.total ? Math.round(100 * b.podiums / b.total) : 0,
+      }))
+      .sort((a, b) => b.wins - a.wins || b.podiums - a.podiums);
+  }
+
+  // --- Graphe progression annuelle ---
+  function buildProgressionHtml(yearlyStats) {
+    if (yearlyStats.length < 2) return '';
+    const W = 600, H = 190;
+    const pL = 42, pR = 38, pT = 14, pB = 30;
+    const cW = W - pL - pR, cH = H - pT - pB;
+    const n = yearlyStats.length;
+
+    const maxWR = Math.max(...yearlyStats.map(d => d.winRate));
+    const wrCeil = maxWR <= 10 ? 10 : maxWR <= 20 ? 20 : maxWR <= 25 ? 25 : maxWR <= 50 ? 50 : 100;
+    const maxP = Math.max(...yearlyStats.map(d => d.pilotCount), 1);
+
+    const xPos = i => pL + (n > 1 ? (i / (n - 1)) : 0.5) * cW;
+    const yW   = v => pT + cH * (1 - v / wrCeil);
+    const yP   = v => pT + cH * (1 - v / maxP);
+    const baseY = (pT + cH).toFixed(1);
+
+    const gridHtml = [0.25, 0.5, 0.75, 1].map(t => {
+      const y   = (pT + cH * (1 - t)).toFixed(1);
+      const wrV = Math.round(wrCeil * t);
+      const pV  = Math.round(maxP * t);
+      return `<line x1="${pL}" y1="${y}" x2="${pL + cW}" y2="${y}" stroke="var(--line)" stroke-width="1"/>` +
+        `<text x="${pL - 4}" y="${(parseFloat(y) + 4).toFixed(1)}" text-anchor="end" font-size="10" style="fill:var(--accent);opacity:.8">${wrV}%</text>` +
+        `<text x="${pL + cW + 4}" y="${(parseFloat(y) + 4).toFixed(1)}" text-anchor="start" font-size="10" style="fill:var(--mint);opacity:.9">${pV}</text>`;
+    }).join('');
+
+    const wrPts  = yearlyStats.map((d, i) => `${i === 0 ? 'M' : 'L'}${xPos(i).toFixed(1)},${yW(d.winRate).toFixed(1)}`).join(' ');
+    const pPts   = yearlyStats.map((d, i) => `${i === 0 ? 'M' : 'L'}${xPos(i).toFixed(1)},${yP(d.pilotCount).toFixed(1)}`).join(' ');
+    const wrArea = `${wrPts} L${xPos(n - 1).toFixed(1)},${baseY} L${xPos(0).toFixed(1)},${baseY}Z`;
+    const pArea  = `${pPts} L${xPos(n - 1).toFixed(1)},${baseY} L${xPos(0).toFixed(1)},${baseY}Z`;
+
+    const xLabels = yearlyStats.map((d, i) =>
+      `<text x="${xPos(i).toFixed(1)}" y="${H - 5}" text-anchor="middle" font-size="11" style="fill:var(--muted)">${d.year}</text>`
+    ).join('');
+
+    const wrDots = yearlyStats.map((d, i) =>
+      `<circle cx="${xPos(i).toFixed(1)}" cy="${yW(d.winRate).toFixed(1)}" r="4" style="fill:var(--accent);stroke:var(--card);stroke-width:2"><title>${d.year} · % victoires : ${d.winRate.toFixed(1)}%</title></circle>`
+    ).join('');
+    const pDots = yearlyStats.map((d, i) =>
+      `<circle cx="${xPos(i).toFixed(1)}" cy="${yP(d.pilotCount).toFixed(1)}" r="4" style="fill:var(--mint);stroke:var(--card);stroke-width:2"><title>${d.year} · Pilotes actifs : ${d.pilotCount}</title></circle>`
+    ).join('');
+
+    return `<div class="card">
+      <p class="section-title" style="margin-bottom:10px">Progression annuelle</p>
+      <div style="display:flex;gap:16px;margin-bottom:8px;flex-wrap:wrap">
+        <span style="display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)">
+          <span style="width:18px;height:2.5px;background:var(--accent);display:inline-block;border-radius:2px"></span>% victoires
+        </span>
+        <span style="display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)">
+          <span style="width:18px;height:2.5px;background:var(--mint);display:inline-block;border-radius:2px"></span>Pilotes actifs
+        </span>
+      </div>
+      <svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block" aria-hidden="true">
+        <line x1="${pL}" y1="${baseY}" x2="${pL + cW}" y2="${baseY}" stroke="var(--line-strong)" stroke-width="1"/>
+        ${gridHtml}
+        <path d="${wrArea}" style="fill:var(--accent);opacity:.08"/>
+        <path d="${pArea}" style="fill:var(--mint);opacity:.12"/>
+        <path d="${wrPts}" style="fill:none;stroke:var(--accent);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round"/>
+        <path d="${pPts}" style="fill:none;stroke:var(--mint);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round"/>
+        ${wrDots}
+        ${pDots}
+        ${xLabels}
+      </svg>
+    </div>`;
+  }
+
   function getCoveredEventIds(pilots) {
     const ids = new Set();
     for (const p of pilots) for (const m of p.matches) ids.add(m.event.eventId);
@@ -883,6 +1042,11 @@ footer a:hover{text-decoration:underline}
     const winRate     = totalParts > 0 ? Math.round(100 * totalWins / totalParts) : 0;
     const podiumRate  = totalParts > 0 ? Math.round(100 * totalPodiums / totalParts) : 0;
     const eventCount  = getCoveredEventIds(pilots);
+    const finaleEntries = countFinaleEntries(pilots);
+    const finaleRate    = totalParts > 0 ? Math.round(100 * finaleEntries / totalParts) : 0;
+    const catsData      = buildCatsData(pilotsAll);
+    const bestCat       = catsData[0] || null;
+    const yearlyStats   = buildYearlyStats();
 
     // Années disponibles (depuis la map, pas filtrées)
     const allYears    = club?.sortedYears || [];
@@ -897,6 +1061,8 @@ footer a:hover{text-decoration:underline}
           <div class="club-kpi silver"><div class="k">Podiums</div><div class="v">${totalPodiums}</div><div class="kpi-sub">/ ${totalParts} · ${podiumRate}%</div></div>
           <div class="club-kpi mint"><div class="k">Vainqueurs</div><div class="v">${pilots.filter(p => p.stats.wins > 0).length}</div><div class="kpi-sub">pilotes différents</div></div>
           <div class="club-kpi teal"><div class="k">Événements</div><div class="v">${eventCount}</div></div>
+          <div class="club-kpi lime"><div class="k">Taux de finale</div><div class="v">${finaleRate}%</div><div class="kpi-sub">${finaleEntries} / ${totalParts}</div></div>
+          <div class="club-kpi lavender"><div class="k">Top catégorie</div><div class="v" style="font-size:16px;line-height:1.3">${bestCat ? escape(bestCat.label) : '—'}</div><div class="kpi-sub">${bestCat ? bestCat.wins + ' victoire' + (bestCat.wins !== 1 ? 's' : '') : ''}</div></div>
         </div>
       </div>`;
 
@@ -922,8 +1088,9 @@ footer a:hover{text-decoration:underline}
     // --- Section catégories (données non filtrées par catégorie) ---
     const catsHtml = buildCategoriesHtml(pilotsAll);
 
-    resultsEl.innerHTML = headerHtml + filtersHtml + catsHtml
-      + `<div class="card" style="padding:0; overflow:hidden"><div class="table-scroll">${tableHtml}</div></div>`;
+    const progressionHtml = buildProgressionHtml(yearlyStats);
+    resultsEl.innerHTML = headerHtml + filtersHtml + progressionHtml + catsHtml
+      + `<div class="card table-card"><div class="table-scroll">${tableHtml}</div></div>`;
 
     // Événements sur les filtres
     resultsEl.querySelectorAll('.yp-btn').forEach(btn => {
@@ -979,7 +1146,7 @@ footer a:hover{text-decoration:underline}
           sortDir = sortDir === 'asc' ? 'desc' : 'asc';
         } else {
           sortCol = col;
-          sortDir = ['name', 'cat', 'bestRank'].includes(col) ? 'asc' : 'desc';
+          sortDir = ['name', 'cat', 'avgRank'].includes(col) ? 'asc' : 'desc';
         }
         renderResults();
       });
@@ -998,7 +1165,7 @@ footer a:hover{text-decoration:underline}
         case 'podiums': av = a.stats.podiums; bv = b.stats.podiums; break;
         case 'podRate': av = a.stats.entries ? a.stats.podiums / a.stats.entries : 0;
                         bv = b.stats.entries ? b.stats.podiums / b.stats.entries : 0; break;
-        case 'bestRank':av = a.stats.bestRank ?? 9999; bv = b.stats.bestRank ?? 9999; break;
+        case 'avgRank': av = a.stats.avgRank  ?? 9999; bv = b.stats.avgRank  ?? 9999; break;
         default: return 0;
       }
       const cmp = typeof av === 'string' ? av.localeCompare(bv, 'fr') : av - bv;
@@ -1018,7 +1185,7 @@ footer a:hover{text-decoration:underline}
       { key: null,       label: '% club V',    nosort: true, title: '% des victoires du club' },
       { key: 'podiums',  label: 'Podiums' },
       { key: null,       label: '% club P',    nosort: true, title: '% des podiums du club' },
-      { key: 'bestRank', label: 'Meilleur',    title: 'Meilleur résultat' },
+      { key: 'avgRank',  label: 'Moy.',        title: 'Classement moyen' },
     ];
 
     const thHtml = cols.map(col => {
@@ -1039,7 +1206,7 @@ footer a:hover{text-decoration:underline}
       const pilotUrl = `${SQORZ_STATS_BASE}?q=${encodeURIComponent(pilot.firstName)}+${encodeURIComponent(pilot.lastName)}`;
       const nameCell = `<a class="pilot-link" href="${escape(pilotUrl)}" target="_blank" rel="noopener noreferrer">${escape(pilot.name)}</a>`;
       const winsCell = s.wins > 0 ? `<span class="wins-badge">${s.wins}</span>` : '0';
-      const best     = s.bestRank != null ? s.bestRank : '—';
+      const avg      = s.avgRank  != null ? s.avgRank.toFixed(1) : '—';
       return `<tr class="pilot-row">
         <td>${rankCell}</td>
         <td>${nameCell}</td>
@@ -1050,7 +1217,7 @@ footer a:hover{text-decoration:underline}
         <td style="font-size:11px;color:var(--muted)">${totalWins > 0 ? Math.round(100 * s.wins / totalWins) + '%' : '—'}</td>
         <td>${s.podiums}</td>
         <td style="font-size:11px;color:var(--muted)">${totalPodiums > 0 ? Math.round(100 * s.podiums / totalPodiums) + '%' : '—'}</td>
-        <td>${best}</td>
+        <td>${avg}</td>
       </tr>`;
     }).join('');
 
@@ -1062,35 +1229,7 @@ footer a:hover{text-decoration:underline}
 
   // --- Section catégories ---
   function buildCategoriesHtml(pilots) {
-    const catMap = new Map();
-    for (const pilot of pilots) {
-      for (const m of pilot.matches) {
-        const code   = m.cls.perpetualClassCode || m.cls.className || '?';
-        const grp    = CODE_TO_GROUP.get(code);
-        const catKey = grp ? grp.key : code;
-        const label  = grp ? grp.label : (CLASS_NAMES[code] || code);
-        if (!catMap.has(catKey)) catMap.set(catKey, { label, wins: 0, podiums: 0, total: 0, pilotKeys: new Set() });
-        const bucket = catMap.get(catKey);
-        if (typeof m.competitor.rank === 'number') {
-          if (m.competitor.rank === 1) bucket.wins++;
-          if (m.competitor.rank <= 3) bucket.podiums++;
-        }
-        bucket.total++;
-        bucket.pilotKeys.add(norm((m.competitor.firstName || '') + ' ' + (m.competitor.lastName || '')));
-      }
-    }
-
-    const cats = [...catMap.entries()]
-      .map(([catKey, b]) => ({
-        code:       catKey,
-        label:      b.label,
-        pilotCount: b.pilotKeys.size,
-        wins:       b.wins,
-        podiums:    b.podiums,
-        rate:       b.total ? Math.round(100 * b.podiums / b.total) : 0,
-      }))
-      .sort((a, b) => b.wins - a.wins || b.podiums - a.podiums);
-
+    const cats = buildCatsData(pilots);
     if (cats.length === 0) return '';
 
     const cardsHtml = cats.map(c => `
@@ -1151,7 +1290,13 @@ footer a:hover{text-decoration:underline}
   backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
   // --- Init ---
-  loadIndex();
+  loadIndex().then(() => {
+    const { club } = parseUrlState();
+    if (club && clubsMap.has(club)) {
+      selectClub(club);
+      history.replaceState(null, '', buildUrl(club));
+    }
+  });
 })();
 </script>
 
