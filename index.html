@@ -421,6 +421,8 @@ footer a:hover{text-decoration:underline}
   <span>Données issues de <a href="https://our.sqorz.com/orgs" target="_blank" rel="noopener noreferrer">Sqorz</a></span>
   <span class="footer-sep">·</span>
   <span>© <span id="footerYear"></span></span>
+  <span class="footer-sep">·</span>
+  <span>Projet communautaire non officiel, non affilié à Sqorz</span>
 </footer>
 <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
 
@@ -531,8 +533,9 @@ footer a:hover{text-decoration:underline}
   // --- Logique de phases (identique à category_stats) ---
   function isFinalPhase(d) {
     const n = (d.phaseName || '').toLowerCase();
-    if (/semi|quarter|quart|demi|\d+[eè]me|\d+\/|1\/|eighth|repech/.test(n)) return false;
-    return /\bfinale?\b/.test(n);
+    if (!/final/.test(n)) return false;
+    if (/semi|demi|quarter|quart|\d+\/|\d+.?[èe]me|\d+°|eighth|repech|petit|last.chance/.test(n)) return false;
+    return true;
   }
 
   // --- computeStats (identique à category_stats) ---
@@ -1325,19 +1328,27 @@ footer a:hover{text-decoration:underline}
   }
 
   // --- Bouton thème ---
-  const themeBtn = document.getElementById('themeBtn');
-  function updateThemeIcon() {
-    themeBtn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
-  }
-  themeBtn.addEventListener('click', () => {
-    const isDark = document.documentElement.classList.contains('dark');
-    const next   = isDark ? 'light' : 'dark';
-    document.documentElement.classList.toggle('dark', !isDark);
-    document.documentElement.dataset.themePref = next;
-    localStorage.setItem('theme', next);
-    updateThemeIcon();
-  });
-  updateThemeIcon();
+  (() => {
+    const btn = document.getElementById('themeBtn');
+    function getTheme() { return localStorage.getItem('theme') || 'auto'; }
+    function applyTheme(pref) {
+      const icons = { auto:'🌓', light:'☀️', dark:'🌙' };
+      btn.textContent = icons[pref] || icons.auto;
+      btn.title = `Thème : ${pref}`;
+      const isDark = pref === 'dark' || (pref !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.classList.toggle('dark', isDark);
+      if (pref === 'auto') localStorage.removeItem('theme');
+      else document.documentElement.dataset.themePref = pref;
+    }
+    btn.addEventListener('click', () => {
+      const order = ['auto','light','dark'];
+      const next = order[(order.indexOf(getTheme()) + 1) % 3];
+      if (next === 'auto') localStorage.removeItem('theme');
+      else localStorage.setItem('theme', next);
+      applyTheme(next);
+    });
+    applyTheme(getTheme());
+  })();
 
   // --- Retour en haut ---
   const backBtn = document.getElementById('backToTop');
