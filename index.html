@@ -737,6 +737,24 @@ footer a:hover{text-decoration:underline}
     else history.pushState(null, '', newUrl);
   }
 
+  window.addEventListener('popstate', () => {
+    const { club } = parseUrlState();
+    if (club && clubsMap && clubsMap.has(club)) {
+      selectClub(club);
+      history.replaceState(null, '', buildUrl(club));
+    } else {
+      // Reset to empty state
+      selectedClubKey = null;
+      clubInp.value = '';
+      yearFilter = new Set();
+      catFilter = '';
+      catSectionOpen = false;
+      sortCol = 'wins';
+      sortDir = 'desc';
+      renderResults();
+    }
+  });
+
   // --- Debug : inspecte un pilote par nom normalisé ---
   window._debugPilot = function(firstName, lastName) {
     if (!pilotsIndex || !selectedClubKey) { console.log('index not loaded or no club selected'); return; }
