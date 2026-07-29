@@ -98,6 +98,8 @@ body{
   .hub-back:hover{color:#fff}
   #retryBtn:not([hidden]){display:block;margin:8px auto 0;padding:6px 18px;background:var(--accent,#4e80ee);color:#fff;border:none;border-radius:6px;font-size:13px;cursor:pointer}
   #retryBtn:hover{opacity:.85}
+  .progress{height:6px;background:var(--card-soft);border:1px solid var(--line);border-radius:99px;overflow:hidden;margin-top:10px}
+  .progress>div{height:100%;width:0;transition:width .2s;background:linear-gradient(90deg,var(--teal),var(--sky),var(--lavender))}
 .topbar h1{margin:24px 0 8px; font-size:34px; font-weight:800; letter-spacing:-1px; color:#fff; text-shadow:0 2px 14px rgba(20,35,60,.45)}
 .topbar p{margin:0; font-size:15px; max-width:min(600px,100%); color:#dce8f2; text-shadow:0 1px 6px rgba(20,35,60,.35); line-height:1.5}
 
@@ -413,6 +415,7 @@ footer a:hover{text-decoration:underline}
       <div class="suggestions" id="suggestions" role="listbox"></div>
     </div>
     <div class="status" id="status" role="status" aria-live="polite"></div>
+    <div class="progress" id="progressWrap" hidden><div id="progressBar"></div></div>
     <button id="retryBtn" hidden>Réessayer</button>
   </div>
 
@@ -647,6 +650,14 @@ footer a:hover{text-decoration:underline}
   }
 
   // --- Chargement de l'index ---
+  function setProgress(done, total) {
+    const wrap = document.getElementById('progressWrap');
+    const bar  = document.getElementById('progressBar');
+    if (!total) { wrap.hidden = true; return; }
+    wrap.hidden = false;
+    bar.style.width = Math.min(99, Math.round(100 * done / total)) + '%';
+  }
+
   async function loadIndex() {
     retryBtn.hidden = true;
     setLoading('Chargement des données…');
@@ -654,13 +665,32 @@ footer a:hover{text-decoration:underline}
     try {
       const res = await fetch(INDEX_URL);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      pilotsIndex = expandIndex(await res.json());
+      const compressed = !!res.headers.get('Content-Encoding');
+      const rawTotal = parseInt(res.headers.get('Content-Length') || '0', 10);
+      const total = compressed ? 83_000_000 : (rawTotal || 83_000_000);
+      const reader = res.body.getReader();
+      const chunks = [];
+      let received = 0;
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        chunks.push(value);
+        received += value.length;
+        setProgress(received, total);
+        setLoading(`Chargement… ${(received / 1048576).toFixed(0)} Mo`);
+      }
+      setProgress(0, 0);
+      const allBytes = new Uint8Array(received);
+      let offset = 0;
+      for (const chunk of chunks) { allBytes.set(chunk, offset); offset += chunk.length; }
+      pilotsIndex = expandIndex(JSON.parse(new TextDecoder().decode(allBytes)));
       clubsMap = buildClubsMap(pilotsIndex);
       clubInp.disabled = false;
       clubInp.focus();
       setStatus(`${clubsMap.size} clubs disponibles — tapez pour chercher.`);
       document.getElementById('tabBar').hidden = false;
     } catch (e) {
+      setProgress(0, 0);
       setStatus('Impossible de charger les données : ' + humanError(e), true);
       retryBtn.hidden = false;
     }
