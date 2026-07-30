@@ -304,6 +304,7 @@ input.control, select.control{width:100%}
 .cat-card-stat .k{font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:.4px; font-weight:600}
 
 .empty-state{padding:40px; text-align:center; color:var(--muted); font-size:13px}
+.chart-empty{padding:24px; text-align:center; color:var(--muted); font-size:13px; font-style:italic}
 
 /* Footer */
 footer{
@@ -343,7 +344,7 @@ footer a:hover{text-decoration:underline}
   .card{padding:12px; border-radius:12px; margin-bottom:12px}
   .club-header{padding:12px 14px}
   .club-name{font-size:18px; margin-bottom:10px}
-  .club-kpis{grid-template-columns:repeat(4,1fr); gap:6px}
+  .club-kpis{grid-template-columns:repeat(2,1fr); gap:6px}
   .club-kpi{padding:8px 6px}
   .club-kpi .v{font-size:16px}
   .club-kpi .k{font-size:9px}
@@ -360,6 +361,8 @@ footer a:hover{text-decoration:underline}
 }
 @media(max-width:400px){
   .cat-grid{grid-template-columns:1fr}
+  .year-pills{gap:3px}
+  .yp-btn{padding:4px 8px; font-size:11px}
 }
 
 /* Tab bar */
@@ -404,9 +407,9 @@ footer a:hover{text-decoration:underline}
 </div>
 
 <main>
-  <div id="tabBar" hidden>
-    <button class="tab-btn active" data-tab="club">Fiche club</button>
-    <button class="tab-btn" data-tab="ranking">Classement général</button>
+  <div id="tabBar" hidden role="tablist">
+    <button class="tab-btn active" data-tab="club" role="tab" aria-selected="true">Fiche club</button>
+    <button class="tab-btn" data-tab="ranking" role="tab" aria-selected="false">Classement général</button>
   </div>
   <div class="card filters" id="searchCard">
     <div class="autocomplete-wrap">
@@ -781,6 +784,10 @@ footer a:hover{text-decoration:underline}
 
   // --- Sélection d'un club ---
   function selectClub(key) {
+    if (!clubsMap || !clubsMap.has(key)) {
+      resultsEl.innerHTML = `<div class="card"><div class="empty-state">Club introuvable (« ${escape(key)} »).</div></div>`;
+      return;
+    }
     selectedClubKey = key;
     const club = clubsMap.get(key);
     if (!club) return;
@@ -1047,7 +1054,7 @@ footer a:hover{text-decoration:underline}
 
   // --- Graphe progression annuelle ---
   function buildProgressionHtml(yearlyStats) {
-    if (yearlyStats.length < 2) return '';
+    if (yearlyStats.length < 2) return '<div class="card"><div class="chart-empty">Pas assez de données (au moins 2 saisons requises).</div></div>';
     const W = 600, H = 190;
     const pL = 42, pR = 38, pT = 14, pB = 30;
     const cW = W - pL - pR, cH = H - pT - pB;
@@ -1288,7 +1295,7 @@ footer a:hover{text-decoration:underline}
     const thHtml = cols.map(col => {
       if (col.nosort) return `<th class="no-sort">${escape(col.label)}</th>`;
       const isSorted = col.key === sortCol;
-      const arrow    = isSorted ? ` ${sortDir === 'asc' ? '▲' : '▼'}` : '';
+      const arrow    = isSorted ? ` <span aria-hidden="true">${sortDir === 'asc' ? '▲' : '▼'}</span>` : '';
       return `<th class="${isSorted ? 'sorted' : ''}" data-col="${col.key}" title="${escape(col.title || col.label)}">${escape(col.label)}${arrow}</th>`;
     }).join('');
 
@@ -1330,7 +1337,7 @@ footer a:hover{text-decoration:underline}
     if (cats.length === 0) return '';
 
     const cardsHtml = cats.map(c => `
-      <div class="cat-card${catFilter === c.code ? ' active' : ''}" data-code="${escape(c.code)}" title="${catFilter === c.code ? 'Cliquer pour effacer le filtre' : 'Cliquer pour filtrer sur cette catégorie'}">
+      <div class="cat-card${catFilter === c.code ? ' active' : ''}" data-code="${escape(c.code)}" title="${catFilter === c.code ? 'Cliquer pour effacer le filtre' : 'Cliquer pour filtrer sur cette catégorie'}" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
         <div class="cat-card-name">${escape(c.label)}</div>
         <div class="cat-card-stats">
           <div class="cat-card-stat"><span class="v">${c.pilotCount}</span><span class="k">Pilotes</span></div>
@@ -1503,7 +1510,7 @@ footer a:hover{text-decoration:underline}
     const thHtml = rCols.map(col => {
       if (col.nosort) return `<th class="no-sort">${escape(col.label)}</th>`;
       const isSorted = col.key === rankingSortCol;
-      const arrow = isSorted ? ` ${rankingSortDir === 'asc' ? '▲' : '▼'}` : '';
+      const arrow = isSorted ? ` <span aria-hidden="true">${rankingSortDir === 'asc' ? '▲' : '▼'}</span>` : '';
       return `<th class="${isSorted ? 'sorted' : ''}" data-rcol="${col.key}" title="${escape(col.title || col.label)}">${escape(col.label)}${arrow}</th>`;
     }).join('');
 
@@ -1628,7 +1635,9 @@ footer a:hover{text-decoration:underline}
   function switchTab(tab) {
     activeTab = tab;
     document.getElementById('tabBar').querySelectorAll('.tab-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.tab === tab);
+      const isActive = btn.dataset.tab === tab;
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
     });
     document.getElementById('searchCard').hidden   = tab !== 'club';
     document.getElementById('results').hidden      = tab !== 'club';
