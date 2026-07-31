@@ -1289,7 +1289,6 @@ footer a:hover{text-decoration:underline}
       { key: null,       label: '% victoires club', nosort: true, title: 'Part des victoires totales du club' },
       { key: 'podiums',  label: 'Podiums' },
       { key: null,       label: '% podiums club',   nosort: true, title: 'Part des podiums totaux du club' },
-      { key: 'avgRank',  label: 'Moy.',        title: 'Classement moyen' },
     ];
 
     const thHtml = cols.map(col => {
@@ -1310,7 +1309,6 @@ footer a:hover{text-decoration:underline}
       const pilotUrl = `${SQORZ_STATS_BASE}?name=${encodeURIComponent(pilot.firstName + ' ' + pilot.lastName)}`;
       const nameCell = `<a class="pilot-link" href="${escape(pilotUrl)}" target="_blank" rel="noopener noreferrer">${escape(pilot.name)}</a>`;
       const winsCell = s.wins > 0 ? `<span class="wins-badge">${s.wins}</span>` : '0';
-      const avg      = s.avgRank  != null ? s.avgRank.toFixed(1) : '—';
       return `<tr class="pilot-row" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' ')this.click()">
         <td>${rankCell}</td>
         <td>${nameCell}</td>
@@ -1321,7 +1319,6 @@ footer a:hover{text-decoration:underline}
         <td style="font-size:11px;color:var(--muted)">${totalWins > 0 ? Math.round(100 * s.wins / totalWins) + '%' : '—'}</td>
         <td>${s.podiums}</td>
         <td style="font-size:11px;color:var(--muted)">${totalPodiums > 0 ? Math.round(100 * s.podiums / totalPodiums) + '%' : '—'}</td>
-        <td>${avg}</td>
       </tr>`;
     }).join('');
 
