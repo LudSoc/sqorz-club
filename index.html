@@ -438,6 +438,7 @@ footer a:hover{text-decoration:underline}
   <span>© <span id="footerYear"></span></span>
   <span class="footer-sep">·</span>
   <span>Projet communautaire non officiel, non affilié à Sqorz</span>
+  <span id="dataDateWrap" hidden><span class="footer-sep">·</span><span>Données du <span id="dataDate"></span></span></span>
 </footer>
 <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
 
@@ -767,6 +768,17 @@ footer a:hover{text-decoration:underline}
     }
   }
 
+  // Date « données du … » affichée dans le pied de page (fraîcheur de l'index).
+  function showDataDate(iso) {
+    const wrap = document.getElementById('dataDateWrap');
+    const el = document.getElementById('dataDate');
+    if (!wrap || !el || !iso) return;
+    const d = new Date(iso);
+    if (isNaN(d.getTime())) return;
+    el.textContent = d.toLocaleDateString('fr-FR');
+    wrap.hidden = false;
+  }
+
   async function loadIndex() {
     retryBtn.hidden = true;
     setLoading('Chargement des données…');
@@ -777,6 +789,7 @@ footer a:hover{text-decoration:underline}
       clubInp.disabled = false;
       clubInp.focus();
       setStatus(`${clubsMap.size} clubs disponibles — tapez pour chercher.`);
+      showDataDate(pilotsIndex.generated);
       document.getElementById('tabBar').hidden = false;
     } catch (e) {
       setProgress(0, 0);
