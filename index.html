@@ -445,7 +445,10 @@ footer a:hover{text-decoration:underline}
 
 <script>
 (() => {
-  const INDEX_URL = 'https://raw.githubusercontent.com/LudSoc/sqorz-stats/main/pilots-index.json';
+  const INDEX_SOURCES = [
+    'https://github.com/LudSoc/sqorz-stats/releases/latest/download/pilots-index.json',
+    'https://raw.githubusercontent.com/LudSoc/sqorz-stats/main/pilots-index.json',
+  ];
   const SQORZ_STATS_BASE = window.location.protocol === 'file:'
     ? '../sqorz_stats/index.html'
     : 'https://ludsoc.github.io/sqorz-stats/';
@@ -672,8 +675,15 @@ footer a:hover{text-decoration:underline}
     setLoading('Chargement des données…');
     clubInp.disabled = true;
     try {
-      const res = await fetch(INDEX_URL);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      let res = null, lastErr = null;
+      for (const url of INDEX_SOURCES) {
+        try {
+          const r = await fetch(url);
+          if (r.ok) { res = r; break; }
+          lastErr = new Error(`HTTP ${r.status}`);
+        } catch (e) { lastErr = e; console.warn('[club] source indisponible : ' + url, e && e.message); }
+      }
+      if (!res) throw lastErr || new Error('Index indisponible.');
       const compressed = !!res.headers.get('Content-Encoding');
       const rawTotal = parseInt(res.headers.get('Content-Length') || '0', 10);
       const total = compressed ? 83_000_000 : (rawTotal || 83_000_000);
