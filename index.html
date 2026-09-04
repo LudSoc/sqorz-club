@@ -671,10 +671,68 @@ footer a:hover{text-decoration:underline}
     bar.style.width = Math.min(99, Math.round(100 * done / total)) + '%';
   }
 
-  async function loadIndex() {
-    retryBtn.hidden = true;
-    setLoading('Chargement des données…');
-    clubInp.disabled = true;
+  // --- Cache client piloté par meta.json (sha256) : l'index (~80 Mo) n'est re-téléchargé
+  // que si sa version a changé. Copie conservée dans la Cache API. ---
+  const INDEX_CACHE_NAME = 'sqorz-index-v1';
+  const INDEX_CACHE_KEY = 'https://sqorz.local/cache/pilots-index.json';
+  const INDEX_META_URL = 'https://ludsoc.github.io/sqorz-stats/pilots-index.meta.json';
+
+  async function openIndexCache() {
+    if (typeof caches === 'undefined') return null;
+    try { return await caches.open(INDEX_CACHE_NAME); }
+    catch (e) { console.warn('[club] cache indisponible :', e && e.message); return null; }
+  }
+
+  async function streamIndexBytes(res) {
+    const compressed = !!res.headers.get('Content-Encoding');
+    const rawTotal = parseInt(res.headers.get('Content-Length') || '0', 10);
+    const total = compressed ? 83_000_000 : (rawTotal || 83_000_000);
+    const reader = res.body.getReader();
+    const chunks = [];
+    let received = 0;
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      chunks.push(value);
+      received += value.length;
+      setProgress(received, total);
+      setLoading(`Chargement… ${(received / 1048576).toFixed(0)} Mo`);
+    }
+    setProgress(0, 0);
+    const allBytes = new Uint8Array(received);
+    let offset = 0;
+    for (const chunk of chunks) { allBytes.set(chunk, offset); offset += chunk.length; }
+    return allBytes;
+  }
+
+  const expandBytes = bytes => expandIndex(JSON.parse(new TextDecoder().decode(bytes)));
+
+  async function loadIndexCached() {
+    let wantSha = null;
+    try {
+      const metaRes = await fetch(INDEX_META_URL);
+      if (metaRes.ok) {
+        const meta = await metaRes.json();
+        wantSha = (meta && meta.index && meta.index.sha256) || null;
+      }
+    } catch (e) { console.warn('[club] meta indisponible :', e && e.message); }
+
+    const cache = await openIndexCache();
+    let hit = null;
+    if (cache) {
+      try {
+        const res = await cache.match(INDEX_CACHE_KEY);
+        if (res) {
+          const sha = res.headers.get('x-index-sha');
+          if ((wantSha && sha === wantSha) || !wantSha) hit = res;
+        }
+      } catch (e) { console.warn('[club] lecture du cache :', e && e.message); }
+    }
+    if (hit) {
+      setLoading('Index déjà à jour — lecture du cache…');
+      return expandBytes(new Uint8Array(await hit.arrayBuffer()));
+    }
+
     try {
       let res = null, lastErr = null;
       for (const url of INDEX_SOURCES) {
@@ -685,25 +743,36 @@ footer a:hover{text-decoration:underline}
         } catch (e) { lastErr = e; console.warn('[club] source indisponible : ' + url, e && e.message); }
       }
       if (!res) throw lastErr || new Error('Index indisponible.');
-      const compressed = !!res.headers.get('Content-Encoding');
-      const rawTotal = parseInt(res.headers.get('Content-Length') || '0', 10);
-      const total = compressed ? 83_000_000 : (rawTotal || 83_000_000);
-      const reader = res.body.getReader();
-      const chunks = [];
-      let received = 0;
-      for (;;) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        chunks.push(value);
-        received += value.length;
-        setProgress(received, total);
-        setLoading(`Chargement… ${(received / 1048576).toFixed(0)} Mo`);
+      const bytes = await streamIndexBytes(res);
+      if (cache && wantSha) {
+        try {
+          await cache.put(INDEX_CACHE_KEY, new Response(bytes, {
+            headers: { 'Content-Type': 'application/json', 'X-Index-Sha': wantSha },
+          }));
+        } catch (e) { console.warn('[club] écriture du cache :', e && e.message); }
       }
-      setProgress(0, 0);
-      const allBytes = new Uint8Array(received);
-      let offset = 0;
-      for (const chunk of chunks) { allBytes.set(chunk, offset); offset += chunk.length; }
-      pilotsIndex = expandIndex(JSON.parse(new TextDecoder().decode(allBytes)));
+      return expandBytes(bytes);
+    } catch (err) {
+      // Dernier recours : copie périmée en cache (hors-ligne)
+      if (cache) {
+        try {
+          const stale = await cache.match(INDEX_CACHE_KEY);
+          if (stale) {
+            setStatus('Hors-ligne — dernière copie connue.', true);
+            return expandBytes(new Uint8Array(await stale.arrayBuffer()));
+          }
+        } catch (e) { /* dernier recours indisponible */ }
+      }
+      throw err;
+    }
+  }
+
+  async function loadIndex() {
+    retryBtn.hidden = true;
+    setLoading('Chargement des données…');
+    clubInp.disabled = true;
+    try {
+      pilotsIndex = await loadIndexCached();
       clubsMap = buildClubsMap(pilotsIndex);
       clubInp.disabled = false;
       clubInp.focus();
