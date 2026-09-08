@@ -24,7 +24,7 @@ Analyze a BMX Race club's performance across seasons: rankings, win rates, activ
 
 ### Tech
 
-Single-file HTML/CSS/JS, no framework, no build step. Data from the public [Sqorz API](https://our.sqorz.com).
+HTML/CSS/JS, no framework, no build step. Shared core (`SqorzCommon`) loaded from sqorz-stats. Data from the public [Sqorz API](https://our.sqorz.com).
 
 > Community project, not affiliated with Sqorz.
 
@@ -48,6 +48,6 @@ Analysez les performances d'un club BMX Race sur plusieurs saisons : classements
 
 ### Technique
 
-HTML/CSS/JS en fichier unique, sans framework, sans étape de build. Données issues de l'[API publique Sqorz](https://our.sqorz.com).
+HTML/CSS/JS, sans framework, sans étape de build. Socle partagé (`SqorzCommon`) chargé depuis sqorz-stats. Données issues de l'[API publique Sqorz](https://our.sqorz.com).
 
 > Projet communautaire non officiel, non affilié à Sqorz.
