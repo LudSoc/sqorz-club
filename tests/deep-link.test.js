@@ -19,3 +19,7 @@ test('init : ?q= pré-remplit et ouvre les suggestions', () => {
 test('sélection club : le ?q= est consommé (pas de re-prefill au reload)', () => {
   assert.ok(src.includes("u.searchParams.delete('q')"), 'q supprimé quand club choisi');
 });
+
+test('?club= insensible à la casse (hub envoie le code brut)', () => {
+  assert.ok(src.includes('const key = club && normClub(club);'), 'normalisation à l’entrée');
+});

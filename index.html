@@ -842,9 +842,10 @@ footer a:hover{text-decoration:underline}
 
   window.addEventListener('popstate', () => {
     const { club } = parseUrlState();
-    if (club && clubsMap && clubsMap.has(club)) {
-      selectClub(club);
-      history.replaceState(null, '', buildUrl(club));
+    const key = club && normClub(club);
+    if (key && clubsMap && clubsMap.has(key)) {
+      selectClub(key);
+      history.replaceState(null, '', buildUrl(key));
     } else {
       // Reset to empty state
       selectedClubKey = null;
@@ -1669,9 +1670,10 @@ footer a:hover{text-decoration:underline}
   // --- Init ---
   loadIndex().then(() => {
     const { club, q } = parseUrlState();
-    if (club && clubsMap.has(club)) {
-      selectClub(club);
-      history.replaceState(null, '', buildUrl(club));
+    const key = club && normClub(club);
+    if (key && clubsMap.has(key)) {
+      selectClub(key);
+      history.replaceState(null, '', buildUrl(key));
     } else if (q) {
       // Pré-remplissage depuis la recherche universelle du hub (?q=).
       clubInp.value = q;
