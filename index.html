@@ -450,7 +450,7 @@ footer a:hover{text-decoration:underline}
 (() => {
   if (!window.SqorzCommon) throw new Error('[club] common.js introuvable — recharge la page.');
   // Socle partagé (common.js) : utils, expansion d'index, chargeur à cache, dates.
-  const { norm, escape, humanError, isFinalPhase, expandIndex, loadIndexCached, formatDataDates } = window.SqorzCommon;
+  const { norm, escape, humanError, isFinalPhase, expandIndex, loadIndexCached, renderDataDates, setBarProgress } = window.SqorzCommon;
   const INDEX_SOURCES = [
     'https://pub-7af06f138c97425f8062b881846803cb.r2.dev/pilots-index.json',
     'https://github.com/LudSoc/sqorz-stats/releases/latest/download/pilots-index.json',
@@ -656,11 +656,7 @@ footer a:hover{text-decoration:underline}
 
   // --- Chargement de l'index ---
   function setProgress(done, total) {
-    const wrap = document.getElementById('progressWrap');
-    const bar  = document.getElementById('progressBar');
-    if (!total) { wrap.hidden = true; return; }
-    wrap.hidden = false;
-    bar.style.width = Math.min(99, Math.round(100 * done / total)) + '%';
+    setBarProgress(done, total);
   }
 
   // --- Chargement via SqorzCommon.loadIndexCached (cache Cache API piloté par meta.json) ---
@@ -677,16 +673,11 @@ footer a:hover{text-decoration:underline}
     };
   }
 
-  // Fraîcheur dans le pied de page (via SqorzCommon.formatDataDates).
+  // Fraîcheur dans le pied de page (via SqorzCommon.renderDataDates).
   function showDataDates() {
-    const wrap = document.getElementById('dataDateWrap');
-    const el = document.getElementById('dataDate');
-    const text = formatDataDates([
+    renderDataDates([
       { tag: 'FR', iso: pilotsIndex && pilotsIndex.generated },
     ]);
-    if (!wrap || !el || !text) return;
-    el.textContent = text;
-    wrap.hidden = false;
   }
 
   async function loadIndex() {
@@ -812,8 +803,10 @@ footer a:hover{text-decoration:underline}
     pushUrlState(key);  // ← ajout
   }
 
-  // --- Exposition des variables pour debug console ---
-  window._getState = () => ({ yearFilter: [...yearFilter], catFilter, selectedClubKey });
+  // --- Exposition des variables pour debug console (seulement avec ?debug=1) ---
+  if (new URLSearchParams(location.search).has('debug')) {
+    window._getState = () => ({ yearFilter: [...yearFilter], catFilter, selectedClubKey });
+  }
 
   // --- URL state ---
   function parseUrlState() {
@@ -851,7 +844,8 @@ footer a:hover{text-decoration:underline}
     }
   });
 
-  // --- Debug : inspecte un pilote par nom normalisé ---
+  // --- Debug : inspecte un pilote par nom normalisé (seulement avec ?debug=1) ---
+  if (new URLSearchParams(location.search).has('debug')) {
   window._debugPilot = function(firstName, lastName) {
     if (!pilotsIndex || !selectedClubKey) { console.log('index not loaded or no club selected'); return; }
     const target = norm(firstName + ' ' + lastName);
@@ -917,6 +911,7 @@ footer a:hover{text-decoration:underline}
     console.log('Clés ignorées (cat):', skippedCat, '| Ignorées (club):', skippedClub);
     console.table([...seenMap.values()]);
   };
+  }
 
   // --- Construction des données pilotes filtrées ---
   function buildPilotsData(ignoreCatFilter = false, ignoreYearFilter = false) {
