@@ -20,3 +20,9 @@ test('fiche club : bouton ☆ avec état initial isFav', () => {
 test('sélection club → récents partagés', () => {
   assert.ok(src.includes("pushRecent('clubs', key, club.displayName)"), 'pushRecent à la sélection');
 });
+
+test('dégradation gracieuse si le CDN common.js est en retard (helpers absents)', () => {
+  assert.ok(src.includes("typeof pushRecent === 'function'"), 'pushRecent gardé');
+  assert.ok(src.includes('const favNow = typeof isFav'), 'isFav gardé via favNow');
+  assert.ok(src.includes("typeof toggleFav !== 'function'"), 'toggleFav gardé au clic');
+});

@@ -795,7 +795,7 @@ footer a:hover{text-decoration:underline}
     selectedClubKey = key;
     const club = clubsMap.get(key);
     if (!club) return;
-    pushRecent('clubs', key, club.displayName);
+    if (typeof pushRecent === 'function') pushRecent('clubs', key, club.displayName);
     clubInp.value = club.displayName;
     hideSuggestions();
     yearFilter     = new Set();
@@ -810,7 +810,7 @@ footer a:hover{text-decoration:underline}
   // --- Favoris partagés (état inter-outils, cf. SqorzCommon.toggleFav) ---
   document.addEventListener('click', e => {
     const btn = e.target.closest('[data-fav-club]');
-    if (!btn || btn.disabled) return;
+    if (!btn || btn.disabled || typeof toggleFav !== 'function') return;
     const nowFav = toggleFav('clubs', btn.dataset.favClub, btn.dataset.favName);
     btn.textContent = nowFav ? '★' : '☆';
     btn.classList.toggle('on', nowFav);
@@ -1176,9 +1176,11 @@ footer a:hover{text-decoration:underline}
     const allYears    = club?.sortedYears || [];
 
     // --- En-tête club ---
+    // Garde : le CDN common.js peut être en retard d'un déploiement (socle partagé).
+    const favNow = typeof isFav === 'function' && isFav('clubs', selectedClubKey);
     const headerHtml = `
       <div class="club-header">
-        <div class="club-name">${escape(club?.displayName || '')}<button class="fav-btn${isFav('clubs', selectedClubKey) ? ' on' : ''}" data-fav-club="${escape(selectedClubKey || '')}" data-fav-name="${escape(club?.displayName || '')}" title="${isFav('clubs', selectedClubKey) ? 'Suivi ✓ — cliquer pour ne plus suivre' : 'Suivre ce club'}">${isFav('clubs', selectedClubKey) ? '★' : '☆'}</button></div>
+        <div class="club-name">${escape(club?.displayName || '')}<button class="fav-btn${favNow ? ' on' : ''}" data-fav-club="${escape(selectedClubKey || '')}" data-fav-name="${escape(club?.displayName || '')}" title="${favNow ? 'Suivi ✓ — cliquer pour ne plus suivre' : 'Suivre ce club'}">${favNow ? '★' : '☆'}</button></div>
         ${club?.city ? `<div style="font-size:12.5px;color:var(--muted);margin-top:2px">${escape(club.city)}</div>` : ''}
         <div class="club-kpis">
           <div class="club-kpi sky"><div class="k">Pilotes actifs</div><div class="v">${pilots.length}</div></div>
