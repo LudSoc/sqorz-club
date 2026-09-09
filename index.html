@@ -566,6 +566,30 @@ footer a:hover{text-decoration:underline}
 
   // --- expandIndex : voir SqorzCommon (sur-ensemble : phases, chronos, séries) ---
 
+  // --- Noms complets des clubs (clubs.json : CODE -> {name, city}, annuaire FFC) ---
+  let clubFullNames = new Map();
+  async function loadClubNames() {
+    try {
+      const r = await fetch('clubs.json', { cache: 'no-cache' });
+      if (!r.ok) return;
+      const j = await r.json();
+      const m = (j && j.mapping) || j || {};
+      for (const [k, v] of Object.entries(m)) {
+        if (k === '_meta' || !v || !v.name) continue;
+        clubFullNames.set(normClub(k), { name: v.name, city: v.city || null });
+      }
+    } catch { /* repli : codes seuls */ }
+  }
+  // « BMX BESANCON (BESANC) » — repli sur le code seul si inconnu.
+  function clubDisplayName(raw) {
+    const name = (raw || '').trim();
+    const full = clubFullNames.get(normClub(name));
+    return full ? `${full.name} (${name})` : name;
+  }
+  function clubCity(raw) {
+    return clubFullNames.get(normClub(raw || ''))?.city || null;
+  }
+
   // --- Construire la map des clubs ---
   function buildClubsMap(idx) {
     const map = new Map();
@@ -587,9 +611,10 @@ footer a:hover{text-decoration:underline}
     }
     const result = new Map();
     for (const [key, raw] of map) {
-      const displayName = [...raw.nameFreq.entries()].sort((a, b) => b[1] - a[1])[0][0];
+      const rawName = [...raw.nameFreq.entries()].sort((a, b) => b[1] - a[1])[0][0];
       result.set(key, {
-        displayName,
+        displayName: clubDisplayName(rawName),
+        city: clubCity(rawName),
         pilotCount: raw.pilotKeys.size,
         sortedYears: [...raw.years].sort().reverse(),
       });
@@ -670,6 +695,7 @@ footer a:hover{text-decoration:underline}
     clubInp.disabled = true;
     try {
       pilotsIndex = await loadIndexCached(pilotsCfg());
+      await loadClubNames();
       clubsMap = buildClubsMap(pilotsIndex);
       clubInp.disabled = false;
       clubInp.focus();
@@ -1143,6 +1169,7 @@ footer a:hover{text-decoration:underline}
     const headerHtml = `
       <div class="club-header">
         <div class="club-name">${escape(club?.displayName || '')}</div>
+        ${club?.city ? `<div style="font-size:12.5px;color:var(--muted);margin-top:2px">${escape(club.city)}</div>` : ''}
         <div class="club-kpis">
           <div class="club-kpi sky"><div class="k">Pilotes actifs</div><div class="v">${pilots.length}</div></div>
           <div class="club-kpi gold"><div class="k">Victoires</div><div class="v">${totalWins}</div><div class="kpi-sub">/ ${totalParts} · ${winRate}%</div></div>
