@@ -186,6 +186,9 @@ input.control, select.control{width:100%}
   border-radius:var(--radius); box-shadow:var(--shadow-xl);
 }
 .club-name{font-size:24px; font-weight:800; color:var(--ink); margin-bottom:16px; letter-spacing:-.5px}
+.fav-btn{font-size:15px; line-height:1; vertical-align:middle; cursor:pointer; background:none; border:1px solid var(--line); border-radius:99px; padding:2px 9px; color:var(--muted); margin-left:8px}
+.fav-btn:hover{ border-color:var(--accent); color:var(--accent); }
+.fav-btn.on{ color:var(--accent); border-color:var(--accent); }
 .club-kpis{display:grid; grid-template-columns:repeat(auto-fill, minmax(140px, 1fr)); gap:12px}
 .club-kpi{
   background:var(--card); border:1px solid var(--line); border-radius:12px;
@@ -450,7 +453,7 @@ footer a:hover{text-decoration:underline}
 (() => {
   if (!window.SqorzCommon) throw new Error('[club] common.js introuvable — recharge la page.');
   // Socle partagé (common.js) : utils, expansion d'index, chargeur à cache, dates.
-  const { norm, escape, humanError, isFinalPhase, expandIndex, loadIndexCached, renderDataDates, setBarProgress } = window.SqorzCommon;
+  const { norm, escape, humanError, isFinalPhase, expandIndex, loadIndexCached, renderDataDates, setBarProgress, isFav, toggleFav, pushRecent } = window.SqorzCommon;
   const INDEX_SOURCES = [
     'https://pub-7af06f138c97425f8062b881846803cb.r2.dev/pilots-index.json',
     'https://github.com/LudSoc/sqorz-stats/releases/latest/download/pilots-index.json',
@@ -792,6 +795,7 @@ footer a:hover{text-decoration:underline}
     selectedClubKey = key;
     const club = clubsMap.get(key);
     if (!club) return;
+    pushRecent('clubs', key, club.displayName);
     clubInp.value = club.displayName;
     hideSuggestions();
     yearFilter     = new Set();
@@ -802,6 +806,16 @@ footer a:hover{text-decoration:underline}
     renderResults();
     pushUrlState(key);  // ← ajout
   }
+
+  // --- Favoris partagés (état inter-outils, cf. SqorzCommon.toggleFav) ---
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('[data-fav-club]');
+    if (!btn || btn.disabled) return;
+    const nowFav = toggleFav('clubs', btn.dataset.favClub, btn.dataset.favName);
+    btn.textContent = nowFav ? '★' : '☆';
+    btn.classList.toggle('on', nowFav);
+    btn.title = nowFav ? 'Suivi ✓ — cliquer pour ne plus suivre' : 'Suivre ce club';
+  });
 
   // --- Exposition des variables pour debug console (seulement avec ?debug=1) ---
   if (new URLSearchParams(location.search).has('debug')) {
@@ -1163,7 +1177,7 @@ footer a:hover{text-decoration:underline}
     // --- En-tête club ---
     const headerHtml = `
       <div class="club-header">
-        <div class="club-name">${escape(club?.displayName || '')}</div>
+        <div class="club-name">${escape(club?.displayName || '')}<button class="fav-btn${isFav('clubs', selectedClubKey) ? ' on' : ''}" data-fav-club="${escape(selectedClubKey || '')}" data-fav-name="${escape(club?.displayName || '')}" title="${isFav('clubs', selectedClubKey) ? 'Suivi ✓ — cliquer pour ne plus suivre' : 'Suivre ce club'}">${isFav('clubs', selectedClubKey) ? '★' : '☆'}</button></div>
         ${club?.city ? `<div style="font-size:12.5px;color:var(--muted);margin-top:2px">${escape(club.city)}</div>` : ''}
         <div class="club-kpis">
           <div class="club-kpi sky"><div class="k">Pilotes actifs</div><div class="v">${pilots.length}</div></div>
