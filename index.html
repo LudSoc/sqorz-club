@@ -825,11 +825,11 @@ footer a:hover{text-decoration:underline}
   // --- URL state ---
   function parseUrlState() {
     const p = new URLSearchParams(location.search);
-    return { club: p.get('club') || '' };
+    return { club: p.get('club') || '', q: p.get('q') || '' };
   }
   function buildUrl(key) {
     const u = new URL(location.href);
-    if (key) u.searchParams.set('club', key);
+    if (key) { u.searchParams.set('club', key); u.searchParams.delete('q'); }
     else u.searchParams.delete('club');
     return u.pathname + (u.search || '');
   }
@@ -1668,10 +1668,15 @@ footer a:hover{text-decoration:underline}
 
   // --- Init ---
   loadIndex().then(() => {
-    const { club } = parseUrlState();
+    const { club, q } = parseUrlState();
     if (club && clubsMap.has(club)) {
       selectClub(club);
       history.replaceState(null, '', buildUrl(club));
+    } else if (q) {
+      // Pré-remplissage depuis la recherche universelle du hub (?q=).
+      clubInp.value = q;
+      renderSuggestions(q);
+      clubInp.focus();
     }
   });
 })();
