@@ -3,7 +3,7 @@
 # Usage : tools/sync-clubs.sh   (depuis la racine club_stats)
 # Puis commiter dans chaque dépôt (1 commit par dépôt, sans push sauf demande).
 set -eu
-ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 BASE="$(dirname "$ROOT")"
 SRC="$ROOT/clubs.json"
 for d in sqorz_stats h2h_stats category_stats; do
