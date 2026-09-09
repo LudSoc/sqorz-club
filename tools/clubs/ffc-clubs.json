@@ -1,0 +1,4316 @@
+[
+ {
+  "title": "AIN'PULSION COTIERE BMX",
+  "city": "THIL",
+  "cp": "01120",
+  "address": "ZAC Actinove 01120 THIL",
+  "id_ffc": "4101101",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "freestyle",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "ST DENIS CYCLISME",
+  "city": "SAINT DENIS LES BOURG",
+  "cp": "01000",
+  "address": "205 chemin des Rippes La Chambière 01000 SAINT DENIS LES BOURG",
+  "id_ffc": "4101007",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX YZEURE",
+  "city": "YZEURE CEDEX",
+  "cp": "03401",
+  "address": "3 place jules Ferry BP 29 03401 YZEURE CEDEX",
+  "id_ffc": "4103108",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "MONTLUCON BMX",
+  "city": "MONTLUCON",
+  "cp": "03100",
+  "address": "8 Rue Ernest Montuses 03100 MONTLUCON",
+  "id_ffc": "4103005",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB DE MAUVES",
+  "city": "MAUVES",
+  "cp": "07300",
+  "address": "Mairie Place de la mairie 07300 MAUVES",
+  "id_ffc": "4107008",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX RIDERS 07",
+  "city": "LAVILLEDIEU",
+  "cp": "07170",
+  "address": "Damien BOUCHIER 220 Chemin des Clots 07170 LAVILLEDIEU",
+  "id_ffc": "4107004",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "B.C. PORTOIS",
+  "city": "PORTES LES VALENCE",
+  "cp": "26800",
+  "address": "Quartier Monerit 26800 PORTES LES VALENCE",
+  "id_ffc": "4126303",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "B.C. ST PAUL 3 CHATEAUX",
+  "city": "SAINT PAUL TROIS CHATEAUX",
+  "cp": "26130",
+  "address": "315 chemin des Goumoux 26130 SAINT PAUL TROIS CHATEAUX",
+  "id_ffc": "4126315",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BIKE CLUB SAINT SORLIN",
+  "city": "SAINT SORLIN EN VALLOIRE",
+  "cp": "26210",
+  "address": "Ludovic LACROIX 160 chemin de Vacarot 26210 SAINT SORLIN EN VALLOIRE",
+  "id_ffc": "4126010",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX CLUB PIERRELATTE",
+  "city": "PIERRELATTE",
+  "cp": "26700",
+  "address": "Centre le Zéphir 26700 PIERRELATTE",
+  "id_ffc": "4126320",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX LIVRON",
+  "city": "LIVRON SUR DROME",
+  "cp": "26250",
+  "address": "Chemin de Champagnat 26250 LIVRON SUR DROME",
+  "id_ffc": "4126304",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX MOURS-ROMANS",
+  "city": "MOURS ST EUSEBE",
+  "cp": "26540",
+  "address": "Maison des associations Place de l'Europe 26540 MOURS ST EUSEBE",
+  "id_ffc": "4126305",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "MONTELIMAR BMX RACING",
+  "city": "MONTELIMAR",
+  "cp": "26200",
+  "address": "Route de Saint Gervais 26200 MONTELIMAR",
+  "id_ffc": "4126302",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VALENCE CHABEUIL BMX CLUB",
+  "city": "CHABEUIL",
+  "cp": "26120",
+  "address": "Johann BOURGEAC 435, Promenade des stades 26120 CHABEUIL",
+  "id_ffc": "4126290",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "ANNECY BMX CLUB",
+  "city": "CRAN GEVRIER",
+  "cp": "74960",
+  "address": "Maison des Associations 16 Chemin des Grèves 74960 CRAN GEVRIER",
+  "id_ffc": "4174312",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "PANDEMIC TRAIL",
+  "city": "MARGENCEL",
+  "cp": "74200",
+  "address": "3 impasse de Sechex 74200 MARGENCEL",
+  "id_ffc": "4174044",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "freestyle",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX GRENOBLE ISERE",
+  "city": "LE VERSOUD",
+  "cp": "38420",
+  "address": "Guillaume BERNARD 22 lotissement Les Jonquilles 38420 LE VERSOUD",
+  "id_ffc": "4138306",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX. PONT EVEQUE",
+  "city": "PONT EVEQUE",
+  "cp": "38780",
+  "address": "Mairie Place Claude Barbier 38780 PONT EVEQUE",
+  "id_ffc": "4138301",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "VOIRON VOREPPE BMX",
+  "city": "VOREPPE",
+  "cp": "38340",
+  "address": "Mairie de Voreppe 1 place Charles de Gaulle 38340 VOREPPE",
+  "id_ffc": "4138008",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX MARCELLINOIS",
+  "city": "SAINT MARCELLIN EN FOREZ",
+  "cp": "42680",
+  "address": "Mairie - 24 rue Carles de mazenod 42680 SAINT MARCELLIN EN FOREZ",
+  "id_ffc": "4142110",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX SPEED RACING",
+  "city": "SAINT GENEST MALIVAUX",
+  "cp": "42660",
+  "address": "6 route de la Pierre Légère 42660 SAINT GENEST MALIVAUX",
+  "id_ffc": "4142107",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX ST PAUL VALLEE DU GIER",
+  "city": "SAINT PAUL EN JAREZ",
+  "cp": "42740",
+  "address": "130 bld Noël Landy 42740 SAINT PAUL EN JAREZ",
+  "id_ffc": "4142109",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "CHALMAZEL GRAVITY",
+  "city": "CHALMAZEL-JEANSAGNIÈRE",
+  "cp": "42600",
+  "address": "5896 route des pistes, bois de couzan 42600 CHALMAZEL-JEANSAGNIÈRE",
+  "id_ffc": "4142032",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "freestyle",
+   "vtt"
+  ]
+ },
+ {
+  "title": "FOUILLOUSE BMX",
+  "city": "LA FOUILLOUSE",
+  "cp": "42480",
+  "address": "8 Chemin de la Tuilerie Les Berges Ensoleillées - 42480 LA FOUILLOUSE",
+  "id_ffc": "4142106",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "ST ETIENNE BMX",
+  "city": "SAINT ETIENNE",
+  "cp": "42000",
+  "address": "Boulevard Neltner Méons 2 42000 SAINT ETIENNE",
+  "id_ffc": "4142103",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "UNION BMX DU ROANNAIS",
+  "city": "ROANNE",
+  "cp": "42300",
+  "address": "Le Nauticum Rue Général Giraud 42300 ROANNE",
+  "id_ffc": "4142026",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX CLUB COURNON D'AUVERGNE",
+  "city": "COURNON D'AUVERGNE CEDEX",
+  "cp": "63800",
+  "address": "2 Chemin de l'Usine Elévatoire 63800 COURNON D'AUVERGNE CEDEX",
+  "id_ffc": "4163097",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX CLUB ORCINES",
+  "city": "ORCINES",
+  "cp": "63870",
+  "address": "Patrick BERNARD 5 rue Lilas du Clos - Montrodeix 63870 ORCINES",
+  "id_ffc": "4163146",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "GERZAT ARVERNE BMX",
+  "city": "GERZAT",
+  "cp": "63360",
+  "address": "Mairie Place de la Liberté 63360 GERZAT",
+  "id_ffc": "4163121",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "LEMPDES BMX AUVERGNE",
+  "city": "LEMPDES",
+  "cp": "63370",
+  "address": "Rue du Marais 63370 LEMPDES",
+  "id_ffc": "4163104",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "freestyle",
+   "gravel",
+   "vtt"
+  ]
+ },
+ {
+  "title": "MOZAC BMX",
+  "city": "MOZAC",
+  "cp": "63200",
+  "address": "rue Louis Dalmas 63200 MOZAC",
+  "id_ffc": "4163103",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "freestyle"
+  ]
+ },
+ {
+  "title": "U. S. ISSOIRE BMX",
+  "city": "ISSOIRE",
+  "cp": "63500",
+  "address": "Maison de l'U.S.I. 9 rue des Couteliers 63500 ISSOIRE",
+  "id_ffc": "4163102",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "freestyle",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX CLUB DE MEYZIEU",
+  "city": "MEYZIEU",
+  "cp": "69330",
+  "address": "Hôtel de Ville Place de l'Europe 69330 MEYZIEU",
+  "id_ffc": "4169118",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX NEUVILLE",
+  "city": "NEUVILLE SUR SAONE",
+  "cp": "69250",
+  "address": "4 impasse de la tatière 69250 NEUVILLE SUR SAONE",
+  "id_ffc": "4169119",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX VTT DARDILLY",
+  "city": "DARDILLY CEDEX",
+  "cp": "69570",
+  "address": "Mairie de Dardilly Place Bayère - BP18 69570 DARDILLY CEDEX",
+  "id_ffc": "4169112",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX VTT LIMONEST",
+  "city": "LIMONEST",
+  "cp": "69760",
+  "address": "Mairie 225 avenue Général de Gaulle 69760 LIMONEST",
+  "id_ffc": "4169116",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "C.T. LYON",
+  "city": "LYON",
+  "cp": "69005",
+  "address": "Didier LAFAY 19 rue du boeuf 69005 LYON",
+  "id_ffc": "4169065",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "freestyle",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "SAINTE CONSORCE BMX TEAM",
+  "city": "STE CONSORCE",
+  "cp": "69280",
+  "address": "Mairie 4 rue de Verdun 69280 STE CONSORCE",
+  "id_ffc": "4169111",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "VAL DE REINS CYCLISTE",
+  "city": "AMPLEPUIS",
+  "cp": "69550",
+  "address": "Mairie d'Amplepuis 69550 AMPLEPUIS",
+  "id_ffc": "4169063",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "route"
+  ]
+ },
+ {
+  "title": "GRIZZLY BIKE MAURIENNE",
+  "city": "SAINT MARTIN SUR LA CHAMBRE",
+  "cp": "73130",
+  "address": "Impasse de la la Grande Maison 73130 SAINT MARTIN SUR LA CHAMBRE",
+  "id_ffc": "4173020",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "INTENSE PROJECT",
+  "city": "LANDRY",
+  "cp": "73210",
+  "address": "303 Résidence Elégie Rue de l'Oratoire 73210 LANDRY",
+  "id_ffc": "4173044",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "MONTMELIAN BMX",
+  "city": "73800 MONTMELIAN",
+  "cp": "90025",
+  "address": "Rue Antoine Besson BP 90025 73800 MONTMELIAN",
+  "id_ffc": "4173310",
+  "region": "auvergne-rhone-alpes",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "B.C.SAULON LA CHAPELLE",
+  "city": "SAULON LA CHAPELLE",
+  "cp": "21910",
+  "address": "MAIRIE 21910 SAULON LA CHAPELLE",
+  "id_ffc": "4221099",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BC MESSIGNY ET VANTOUX",
+  "city": "CLENAY SAINT JULIEN",
+  "cp": "21490",
+  "address": "11 Grande rue 21490 CLENAY SAINT JULIEN",
+  "id_ffc": "4221080",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BEAUNE BMX",
+  "city": "BEAUNE",
+  "cp": "21200",
+  "address": "Maison des associations 19 rue poterne 21200 BEAUNE",
+  "id_ffc": "4221024",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "S.C.OLYMPIQUE DE DIJON",
+  "city": "DIJON",
+  "cp": "21000",
+  "address": "17 Rue Léon Mauris 21000 DIJON",
+  "id_ffc": "4221085",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "UN CYCLING EVENT",
+  "city": "CHENOVE",
+  "cp": "21300",
+  "address": "67 Avenue Roland Carraz 21300 CHENOVE",
+  "id_ffc": "4221014",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "A.V. BEAULIEU MANDEURE",
+  "city": "MANDEURE",
+  "cp": "25350",
+  "address": "34 Rue De La Libération 25350 MANDEURE",
+  "id_ffc": "4225022",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BAUME LES DAMES BMX",
+  "city": "BAUME LES DAMES",
+  "cp": "25110",
+  "address": "Mairie de Baume les Dames 3 Place de la Républiqe 25110 BAUME LES DAMES",
+  "id_ffc": "4225051",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX BESANCON",
+  "city": "BESANCON",
+  "cp": "25000",
+  "address": "24 rue des vignerons 25000 BESANCON",
+  "id_ffc": "4225013",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CC ETUPES LE DOUBS PAYS DE MONTBELIARD",
+  "city": "ETUPES",
+  "cp": "25460",
+  "address": "9 rue des Roses 25460 ETUPES",
+  "id_ffc": "4225034",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX CHAMPEY PAYS D'HERICOURT",
+  "city": "VILLAFANS",
+  "cp": "70110",
+  "address": "44 Grande Rue 70110 VILLAFANS",
+  "id_ffc": "4270078",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CC Pays Vesoul Hte-Saône",
+  "city": "COLOMBE LES VESOUL",
+  "cp": "70000",
+  "address": "33 Grande Rue 70000 COLOMBE LES VESOUL",
+  "id_ffc": "4270003",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "freestyle",
+   "route"
+  ]
+ },
+ {
+  "title": "AC DAMPARIS TAVAUX",
+  "city": "DAMPARIS",
+  "cp": "39500",
+  "address": "Mairie de Damparis 2 Rue de Belvoye 39500 DAMPARIS",
+  "id_ffc": "4239029",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "ASGU BERTRANGES BMX",
+  "city": "URZY",
+  "cp": "58130",
+  "address": "450 Route du Greux 58130 URZY",
+  "id_ffc": "4258062",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "PASSE PARTOUT VTT MACON",
+  "city": "MACON",
+  "cp": "71000",
+  "address": "78 Rue des Epinoches 71000 MACON",
+  "id_ffc": "4271110",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "vtt"
+  ]
+ },
+ {
+  "title": "CLUB AVENIR SAINT GEORGES",
+  "city": "SAINT GEORGES SUR BAULCHES",
+  "cp": "89000",
+  "address": "37 Grande Rue 89000 SAINT GEORGES SUR BAULCHES",
+  "id_ffc": "4289076",
+  "region": "bourgogne-franche-comte",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "B.A.S.E 22",
+  "city": "LOUDEAC",
+  "cp": "22600",
+  "address": "53 RUE DE PONTIVY 22600 LOUDEAC",
+  "id_ffc": "4322486",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX QUEVERT",
+  "city": "QUEVERT",
+  "cp": "22100",
+  "address": "MAIRIE DE QUEVERT - 4 RUE DU VAL 22100 QUEVERT",
+  "id_ffc": "4322502",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX TREGUEUX C.D'ARMOR",
+  "city": "QUESSOY",
+  "cp": "22120",
+  "address": "5 LE PUITS ROUAULT 22120 QUESSOY",
+  "id_ffc": "4322504",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CC DU BLAVET",
+  "city": "ROSTRENEN",
+  "cp": "22110",
+  "address": "13 bis place Porz Moelou 22110 ROSTRENEN",
+  "id_ffc": "4322067",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "SAINT BRIEUC BMX",
+  "city": "PLOUFRAGAN",
+  "cp": "22440",
+  "address": "20 RUE PIERRE DE COUBERTIN 22440 PLOUFRAGAN",
+  "id_ffc": "4322540",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "ASSOCIATION CYCLISTE LEONARDE",
+  "city": "MESPAUL",
+  "cp": "29420",
+  "address": "334 RUE DU MENEZ 29420 MESPAUL",
+  "id_ffc": "4329166",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "freestyle",
+   "gravel",
+   "piste",
+   "polo-velo",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BREST BMX 29",
+  "city": "BREST",
+  "cp": "29200",
+  "address": "7 RUE DU MARECHAL CLAUZEL 29200 BREST",
+  "id_ffc": "4329547",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CORNOUAILLE BMX",
+  "city": "PLOGONNEC",
+  "cp": "29180",
+  "address": "MAIRIE BP 8 29180 PLOGONNEC",
+  "id_ffc": "4329541",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "GUIPAVAS BMX",
+  "city": "GUIPAVAS",
+  "cp": "29490",
+  "address": "7 RUE RENE CASSIN 29490 GUIPAVAS",
+  "id_ffc": "4329013",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "LOCMARIA BMX",
+  "city": "LOCMARIA PLOUZANE",
+  "cp": "29280",
+  "address": "Amicale Laïque CSC Ti Lanvennec 29280 LOCMARIA PLOUZANE",
+  "id_ffc": "4329511",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "PLOUGASTEL BMX",
+  "city": "PLOUGASTEL DAOULAS",
+  "cp": "29470",
+  "address": "135 RUE SANTIK BENEAT ESPACE AVEL VOR 29470 PLOUGASTEL DAOULAS",
+  "id_ffc": "4329543",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "ASC BMX CHANTEPIE",
+  "city": "CHANTEPIE",
+  "cp": "35135",
+  "address": "MAIRIE CHANTEPIE 44 AVENUE ANDRE BONNIN 35135 CHANTEPIE",
+  "id_ffc": "4335516",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB DE REDON",
+  "city": "SAINT JEAN LA POTERIE",
+  "cp": "56350",
+  "address": "35 RUE GREE DES MOULINS 56350 SAINT JEAN LA POTERIE",
+  "id_ffc": "4335545",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX PAYS DE VITRE",
+  "city": "VITRE",
+  "cp": "35500",
+  "address": "22 ALLEE PIERRE DE GENNES 35500 VITRE",
+  "id_ffc": "4335533",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx",
+   "freestyle"
+  ]
+ },
+ {
+  "title": "PAYS DE FOUGERES CYCLISME",
+  "city": "FOUGERES",
+  "cp": "35300",
+  "address": "7 RUE CHARLES MALLARD 35300 FOUGERES",
+  "id_ffc": "4335610",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "freestyle",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "TEAM ACIGNE BMX",
+  "city": "ACIGNE",
+  "cp": "35690",
+  "address": "AVENUE DU CHEVRE Espace du Pont d'Ohin 35690 ACIGNE",
+  "id_ffc": "4335515",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "TRISKELL BIKE",
+  "city": "IFFENDIC",
+  "cp": "35750",
+  "address": "Place de l'église, mairie 35750 IFFENDIC",
+  "id_ffc": "4335499",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx",
+   "freestyle"
+  ]
+ },
+ {
+  "title": "ASSOCIATION PLOUAY CYCLISME FFC",
+  "city": "PLOUAY",
+  "cp": "56240",
+  "address": "19 RUE DE BECHEREL 56240 PLOUAY",
+  "id_ffc": "4356472",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX THEIX",
+  "city": "THEIX NOYALO",
+  "cp": "56450",
+  "address": "15 B RUE DE LA CARRIERE 56450 THEIX NOYALO",
+  "id_ffc": "4356523",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CRAZY WOOD VTT",
+  "city": "BIGNAN",
+  "cp": "56500",
+  "address": "KERHAL 56500 BIGNAN",
+  "id_ffc": "4356394",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "vtt"
+  ]
+ },
+ {
+  "title": "HENNEBONT BMX",
+  "city": "HENNEBONT",
+  "cp": "56700",
+  "address": "RUE PAUL GAUGUIN 56700 HENNEBONT",
+  "id_ffc": "4356538",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "KITCHEN RIDER",
+  "city": "VANNES",
+  "cp": "56000",
+  "address": "MAISON DES ASSOCIATIONS 31 RUE GUILLAUME LE BARTZ 56000 VANNES",
+  "id_ffc": "4356546",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "LORIENT BMX",
+  "city": "LORIENT",
+  "cp": "56100",
+  "address": "Chez Mr CHOUX - 21 RUE RATIER 56100 LORIENT",
+  "id_ffc": "4356525",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "PLOUAY BMX",
+  "city": "PLOUAY",
+  "cp": "56240",
+  "address": "52 RUE PAUL IHUEL 56240 PLOUAY",
+  "id_ffc": "4356245",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "RHUYS BMX",
+  "city": "SARZEAU",
+  "cp": "56370",
+  "address": "ROND POINT DES 3 DUCHESSES PISTE DE BMX 56370 SARZEAU",
+  "id_ffc": "4356496",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "freestyle",
+   "piste",
+   "vtt"
+  ]
+ },
+ {
+  "title": "UCK VANNES BRETAGNE SUD CYCLISME",
+  "city": "VANNES",
+  "cp": "56000",
+  "address": "12 rue Georges Caldray Le Bondon 56000 VANNES",
+  "id_ffc": "4356015",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VC PAYS DE LORIENT",
+  "city": "LORIENT",
+  "cp": "56100",
+  "address": "85 RUE DE LANVEUR 56100 LORIENT",
+  "id_ffc": "4356224",
+  "region": "bretagne",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BC ST GERMINOIS",
+  "city": "ST GERMAIN DU PUY",
+  "cp": "18390",
+  "address": "Mairie de St Germain du Puy rue Joliot Curie 18390 ST GERMAIN DU PUY",
+  "id_ffc": "4418236",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BICROSS RIANNAIS BERRY",
+  "city": "RIANS",
+  "cp": "18220",
+  "address": "4 Grand'rue Mairie 18220 RIANS",
+  "id_ffc": "4418353",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BOURGES BMX RC",
+  "city": "BOURGES",
+  "cp": "18000",
+  "address": "13 rue Jean Bart 18000 BOURGES",
+  "id_ffc": "4418319",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB 28",
+  "city": "SERAZEREUX",
+  "cp": "28170",
+  "address": "4 rue de la tourelle, Le Péage 28170 SERAZEREUX",
+  "id_ffc": "4428291",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX NOGENT LE ROI",
+  "city": "NOGENT LE ROI",
+  "cp": "28210",
+  "address": "1 rue Porte Chartraine 28210 NOGENT LE ROI",
+  "id_ffc": "4428252",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "C CHARTRES BMX",
+  "city": "CHARTRES",
+  "cp": "28000",
+  "address": "3 rue Jean Monnet 28000 CHARTRES",
+  "id_ffc": "4428176",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "C'CHARTRES CYCLISME",
+  "city": "CHARTRES",
+  "cp": "28000",
+  "address": "3 bis rue Jean Monnet 28000 CHARTRES",
+  "id_ffc": "4428026",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "LUISANT BMX CLUB",
+  "city": "VIEUVICQ",
+  "cp": "28120",
+  "address": "La Rivière 28120 VIEUVICQ",
+  "id_ffc": "4428326",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BC CASTELROUSSIN",
+  "city": "CHATEAUROUX",
+  "cp": "36000",
+  "address": "4 rue de la Margotière 36000 CHATEAUROUX",
+  "id_ffc": "4436309",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "AS CHANCEAUX BMX",
+  "city": "CHANCEAUX SUR CHOISILLE",
+  "cp": "37390",
+  "address": "19 rue de la Mairie 37390 CHANCEAUX SUR CHOISILLE",
+  "id_ffc": "4437385",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "AZAY BMX CLUB",
+  "city": "AZAY SUR CHER AZAY SUR CHER",
+  "cp": "37270",
+  "address": "MAIRIE 17 GRANDE RUE 37270 AZAY SUR CHER AZAY SUR CHER",
+  "id_ffc": "4437311",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB JOUE L TOURS",
+  "city": "JOUE LES TOURS",
+  "cp": "37300",
+  "address": "ESPACE CLOS NEUF 2 rue du Clos Neuf 37300 JOUE LES TOURS",
+  "id_ffc": "4437189",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "DESCARTES BMX",
+  "city": "DESCARTES",
+  "cp": "37160",
+  "address": "2 avenue les Réaux 37160 DESCARTES",
+  "id_ffc": "4437273",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "ST AVERTIN SPORTS BMX",
+  "city": "SAINT AVERTIN",
+  "cp": "37550",
+  "address": "31 rue F. Joliot Curie 37550 SAINT AVERTIN",
+  "id_ffc": "4437196",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "UC AMBOISE NAZELLES NEGRON",
+  "city": "NAZELLES NEGRON",
+  "cp": "37530",
+  "address": "19 boulevard du Sevrage 37530 NAZELLES NEGRON",
+  "id_ffc": "4437371",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BICROSS CLUB MEROIS",
+  "city": "MER",
+  "cp": "41500",
+  "address": "Mairie de Mer Route Nationale 41500 MER",
+  "id_ffc": "4441381",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CJ MONT PRÈS CHAMBORD BMX",
+  "city": "ST CLAUDE DE DIRAY",
+  "cp": "41350",
+  "address": "635 route du Tir 41350 ST CLAUDE DE DIRAY",
+  "id_ffc": "4441210",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "THEILLAY BMX CLUB",
+  "city": "THEILLAY",
+  "cp": "41300",
+  "address": "13 route des Brosses 41300 THEILLAY",
+  "id_ffc": "4441247",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BCC QUIERS S/BEZONDE",
+  "city": "QUIERS SUR BEZONDE",
+  "cp": "45270",
+  "address": "138 rue de la Mairie 45270 QUIERS SUR BEZONDE",
+  "id_ffc": "4445317",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BI CLUB CHAPELLOIS",
+  "city": "LA CHAPELLE ST MESMIN",
+  "cp": "45380",
+  "address": "5 rue des Pierrelayes 45380 LA CHAPELLE ST MESMIN",
+  "id_ffc": "4445181",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "FREE BIKE DAMPIERROIS",
+  "city": "DAMPIERRE EN BURLY",
+  "cp": "45570",
+  "address": "Mairie Route Nationale 45570 DAMPIERRE EN BURLY",
+  "id_ffc": "4445248",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "GUIDON CHALETTOIS",
+  "city": "VILLEMANDEUR",
+  "cp": "45700",
+  "address": "32 rue George Sand chez M. FOUCHER Patrick 45700 VILLEMANDEUR",
+  "id_ffc": "4445083",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "OLIVET BICROSS",
+  "city": "OLIVET",
+  "cp": "45160",
+  "address": "283 rue du Général de Gaulle 45160 OLIVET",
+  "id_ffc": "4445327",
+  "region": "centre-val-de-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX RACE BIGUGLIA",
+  "city": "BIGUGLIA",
+  "cp": "20620",
+  "address": "12OO piste Adrien LIPPINI 20620 BIGUGLIA",
+  "id_ffc": "4520025",
+  "region": "corse",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX ROLLER SKATE TROYES",
+  "city": "TROYES",
+  "cp": "10000",
+  "address": "63 avenue Pasteur MAISON DES ASSOCIATIONS 10000 TROYES",
+  "id_ffc": "4610032",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx",
+   "freestyle",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "GENERATION 10 VTT",
+  "city": "LES LOGES MARGUERON",
+  "cp": "10210",
+  "address": "5 RUE DU CHADOT 10210 LES LOGES MARGUERON",
+  "id_ffc": "4610005",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "gravel",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "U.V.C.A TROYES",
+  "city": "TROYES",
+  "cp": "10000",
+  "address": "Maison des Associations 63 avenue Pasteur 10000 TROYES",
+  "id_ffc": "4610008",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "e-cycling",
+   "freestyle",
+   "gravel",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX STRASBOURG",
+  "city": "STRASBOURG",
+  "cp": "67000",
+  "address": "Rue Baden Powel 67000 STRASBOURG",
+  "id_ffc": "4667054",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "SPRINTERS PISTARDS ECKBOLSHEIM",
+  "city": "ECKBOLSHEIM",
+  "cp": "67201",
+  "address": "12 rue du Commerce 67201 ECKBOLSHEIM",
+  "id_ffc": "4667004",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VCU SCHWENHEIM",
+  "city": "SCHWENHEIM",
+  "cp": "67440",
+  "address": "150 rue Principale 67440 SCHWENHEIM",
+  "id_ffc": "4667032",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX CERNAY",
+  "city": "GUEBERSHWIHR",
+  "cp": "68420",
+  "address": "7 rue de la Source 68420 GUEBERSHWIHR",
+  "id_ffc": "4668202",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "ENTENTE CYCLISTE COLMAR",
+  "city": "COLMAR",
+  "cp": "68000",
+  "address": "Maison des Associations 6 Route d'Ingersheim 68000 COLMAR",
+  "id_ffc": "4668029",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "SLO BETTANCOURT",
+  "city": "BETTANCOURT LA FERREE",
+  "cp": "52100",
+  "address": "Mairie de Bettancourt Rue Denis Mougeot 52100 BETTANCOURT LA FERREE",
+  "id_ffc": "4652057",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "V.C.CHAUMONTAIS",
+  "city": "VERBIESLES",
+  "cp": "52000",
+  "address": "7 rue des Herbues 52000 VERBIESLES",
+  "id_ffc": "4652016",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BETHENIVILLE OPEN BMX RACE",
+  "city": "BETHENIVILLE",
+  "cp": "51490",
+  "address": "7 Place de la Mairie 51490 BETHENIVILLE",
+  "id_ffc": "4651009",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BIKES RACING COUVROT",
+  "city": "COUVROT",
+  "cp": "51300",
+  "address": "2 Bis Impasse des Cugnots 51300 COUVROT",
+  "id_ffc": "4651044",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "RACING CLUB FAGNIÈRES",
+  "city": "FAGNIERES",
+  "cp": "51510",
+  "address": "4 rue Guillaume Coustou 51510 FAGNIERES",
+  "id_ffc": "4651006",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "route"
+  ]
+ },
+ {
+  "title": "BMX CONTRISSON",
+  "city": "CONTRISSON",
+  "cp": "55800",
+  "address": "68 rue Simon 55800 CONTRISSON",
+  "id_ffc": "4655188",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "UC BARISIENNE",
+  "city": "BAR LE DUC",
+  "cp": "55000",
+  "address": "4 Boulevard des Ardennes 55000 BAR LE DUC",
+  "id_ffc": "4655184",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "US THIERVILLE CYCLISME",
+  "city": "VERDUN",
+  "cp": "55100",
+  "address": "5 rue Saint Pierre 55100 VERDUN",
+  "id_ffc": "4655071",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "UC BASSIN HOUILLER",
+  "city": "SAINT AVOLD",
+  "cp": "57500",
+  "address": "Maison des Associations Rue de Dudweiler 57500 SAINT AVOLD",
+  "id_ffc": "4657026",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "CORNIMONT BMX",
+  "city": "GERARDMER",
+  "cp": "88400",
+  "address": "66 Boulevard de Colmar 88400 GERARDMER",
+  "id_ffc": "4688077",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CSA RAONNAIS",
+  "city": "RAON L'ETAPE",
+  "cp": "88110",
+  "address": "1 rue Jean Jaures 88110 RAON L'ETAPE",
+  "id_ffc": "4688033",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "CYCLE GOLBEEN",
+  "city": "GOLBEY",
+  "cp": "88190",
+  "address": "56 bis rue du Fort 88190 GOLBEY",
+  "id_ffc": "4688032",
+  "region": "grand-est",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "A LAON BIKE",
+  "city": "LAON",
+  "cp": "02000",
+  "address": "10, Place des Maraichers 02000 LAON",
+  "id_ffc": "4702070",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "freestyle",
+   "gravel",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX DE SAINT QUENTIN",
+  "city": "SAINT QUENTIN",
+  "cp": "02100",
+  "address": "288 Bis, Rue de Paris 02100 SAINT QUENTIN",
+  "id_ffc": "4702125",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CC VILLENEUVE ST GERMAIN SOISSONS AISNE",
+  "city": "VILLENEUVE SAINT GERMAIN",
+  "cp": "02200",
+  "address": "Mairie 02200 VILLENEUVE SAINT GERMAIN",
+  "id_ffc": "4702063",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "US BIETTE GAUCHY",
+  "city": "GAUCHY",
+  "cp": "02430",
+  "address": "35 Rue Roger SALENGRO 02430 GAUCHY",
+  "id_ffc": "4702006",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "piste",
+   "polo-velo",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX ARLEUX",
+  "city": "ARLEUX",
+  "cp": "59151",
+  "address": "Place du Général De Gaulle Mairie d'Arleux 59151 ARLEUX",
+  "id_ffc": "4759275",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB  RONCQ",
+  "city": "RONCQ",
+  "cp": "59223",
+  "address": "293 rue de Lille 59223 RONCQ",
+  "id_ffc": "4759267",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB DE MARCHIENNES",
+  "city": "MARCHIENNES",
+  "cp": "59870",
+  "address": "Route de Flines Piste Jean Lesoin D35 Site des Evoiches 59870 MARCHIENNES",
+  "id_ffc": "4759259",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX LA GORGUE",
+  "city": "LA GORGUE",
+  "cp": "59253",
+  "address": "36, Rue De L'Abbaye De Beaupré 59253 LA GORGUE",
+  "id_ffc": "4759270",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "vtt"
+  ]
+ },
+ {
+  "title": "CC CAMBRESIEN",
+  "city": "ESNES",
+  "cp": "59127",
+  "address": "1, Rue De Lesdain 59127 ESNES",
+  "id_ffc": "4759035",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "LUC BMX",
+  "city": "LILLE",
+  "cp": "59000",
+  "address": "4 Rue du Professeur Langelin 59000 LILLE",
+  "id_ffc": "4759258",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "MERVILLE BCC",
+  "city": "MERVILLE",
+  "cp": "59660",
+  "address": "Hôtel de Ville Place de la Libération 59660 MERVILLE",
+  "id_ffc": "4759274",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "NORD BMX CLUB",
+  "city": "59700 MARCQ EN BAREUIL",
+  "cp": "35008",
+  "address": "Aérodrome Lille Marcq BP35008 59700 MARCQ EN BAREUIL",
+  "id_ffc": "4759261",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "O GRANDE SYNTHE",
+  "city": "GRANDE SYNTHE",
+  "cp": "59760",
+  "address": "Stadium du Littoral Boulevard Pierre Mendés France 59760 GRANDE SYNTHE",
+  "id_ffc": "4759058",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VC ROUBAIX LILLE METROPOLE",
+  "city": "ROUBAIX",
+  "cp": "59100",
+  "address": "39 Avenue Fléming 59100 ROUBAIX",
+  "id_ffc": "4759114",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX BAILLEUL SUR THERAIN",
+  "city": "BAILLEUL SUR THERAIN",
+  "cp": "60930",
+  "address": "D620 Hameau de l'alouette 60930 BAILLEUL SUR THERAIN",
+  "id_ffc": "4760007",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX COMPIEGNE VENETTE",
+  "city": "CLAIROIX",
+  "cp": "60280",
+  "address": "75 rue de la République Mairie de CLAIROIX 60280 CLAIROIX",
+  "id_ffc": "4760170",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CREPY BMX",
+  "city": "CREPY EN VALOIS CREPY EN VALOIS",
+  "cp": "60800",
+  "address": "Chez mr Berenguer yves 17 rue de verdun apt 23 Bat 3 60800 CREPY EN VALOIS CREPY EN VALOIS",
+  "id_ffc": "4760020",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "ESTREES BMX",
+  "city": "ESTREES SAINT DENIS",
+  "cp": "60190",
+  "address": "MAIRIE 15 Rue de l'Hôtel de Ville BP 3 60190 ESTREES SAINT DENIS",
+  "id_ffc": "4760011",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CALAIS BMX",
+  "city": "CALAIS",
+  "cp": "62100",
+  "address": "281 rue Jean Rostand 62100 CALAIS",
+  "id_ffc": "4762254",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "FLEURBAIX BMX",
+  "city": "FLEURBAIX",
+  "cp": "62840",
+  "address": "Rue David 62840 FLEURBAIX",
+  "id_ffc": "4762256",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "LIEVIN BMX",
+  "city": "ECURIE",
+  "cp": "62223",
+  "address": "15 rue des Meuniers 62223 ECURIE",
+  "id_ffc": "4762253",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "vtt"
+  ]
+ },
+ {
+  "title": "LONGUENESSE BMX",
+  "city": "LONGUENESSE",
+  "cp": "62219",
+  "address": "Chemin Plateau des Bruyères 62219 LONGUENESSE",
+  "id_ffc": "4762257",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "VC COTE PICARDE",
+  "city": "MERS LES BAINS",
+  "cp": "80350",
+  "address": "182 Avenue Pierre et Marie Curie 80350 MERS LES BAINS",
+  "id_ffc": "4780112",
+  "region": "hauts-de-france",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BC VTT VERRIERES",
+  "city": "VERRIERES LE BUISSON",
+  "cp": "91370",
+  "address": "14, Avenue Alfred Carteron 91370 VERRIERES LE BUISSON",
+  "id_ffc": "4891337",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "vtt"
+  ]
+ },
+ {
+  "title": "KRONOS ACADEMY PARIS SACLAY",
+  "city": "SACLAY",
+  "cp": "91400",
+  "address": "12 RUE DE LA TRUIE QUI FILE 91400 SACLAY",
+  "id_ffc": "4891324",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "vtt"
+  ]
+ },
+ {
+  "title": "MONTGERON BC",
+  "city": "MONTGERON",
+  "cp": "91230",
+  "address": "119 AVE CHARLES DE GAULLE 91230 MONTGERON",
+  "id_ffc": "4891315",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "TEAM CYCLISTE LINAS MONTLHERY",
+  "city": "LINAS",
+  "cp": "91310",
+  "address": "1 Rue du Chemin Vert 91310 LINAS",
+  "id_ffc": "4891353",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VC MASSY PALAISEAU BC",
+  "city": "MASSY",
+  "cp": "91300",
+  "address": "CENTRE OMNISPORTS AVENUE NOYER LAMBERT 91300 MASSY",
+  "id_ffc": "4891310",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BC BOUTIGNY",
+  "city": "BOUTIGNY",
+  "cp": "77470",
+  "address": "6 RUE DE PLAISANCE 77470 BOUTIGNY",
+  "id_ffc": "4877147",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BC CHELLES",
+  "city": "CHELLES",
+  "cp": "77500",
+  "address": "15 Rue Pasteur 77500 CHELLES",
+  "id_ffc": "4877148",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BICROSS 2000",
+  "city": "VILLEPARISIS",
+  "cp": "77270",
+  "address": "32 RUE DE RUZE 77270 VILLEPARISIS",
+  "id_ffc": "4877125",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "MARIN TOURNAN BICROSS",
+  "city": "SOLERS",
+  "cp": "77111",
+  "address": "16 rue du Champ au Maigre 77111 SOLERS",
+  "id_ffc": "4877118",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "VAL BMX",
+  "city": "TORCY",
+  "cp": "77200",
+  "address": "1 IMPASSE DES JARDINS 77200 TORCY",
+  "id_ffc": "4877137",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CM AUBERVILLIERS 93",
+  "city": "AUBERVILLIERS",
+  "cp": "93300",
+  "address": "35 RUE HELENE COCHENNEC 93300 AUBERVILLIERS",
+  "id_ffc": "4893505",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "route"
+  ]
+ },
+ {
+  "title": "BC ERAGNY",
+  "city": "ERAGNY SUR OISE",
+  "cp": "95610",
+  "address": "13 allée du Stade 95610 ERAGNY SUR OISE",
+  "id_ffc": "4895727",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BCVO FRANCONVILLE",
+  "city": "FRANCONVILLE",
+  "cp": "95130",
+  "address": "HOTEL DE VILLE 11 RUE DE LA STATION 95130 FRANCONVILLE",
+  "id_ffc": "4895701",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "OSNY BMX CLUB",
+  "city": "OSNY",
+  "cp": "95520",
+  "address": "14 rue Willian Thomley 95520 OSNY",
+  "id_ffc": "4895726",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX SUCY 94",
+  "city": "SUCY EN BRIE",
+  "cp": "94370",
+  "address": "14 rue du Clos de Sacy 94370 SUCY EN BRIE",
+  "id_ffc": "4894612",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "TEAM 94 CYCLING",
+  "city": "VILLENEUVE ST GEORGES",
+  "cp": "94190",
+  "address": "53 Avenue de Choisy 94190 VILLENEUVE ST GEORGES",
+  "id_ffc": "4894601",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BC ST NOM LA BRETECHE",
+  "city": "SAINT NOM LA BRETECHE",
+  "cp": "78860",
+  "address": "44 avenue du pays de Galie C/o Mr Rochard 78860 SAINT NOM LA BRETECHE",
+  "id_ffc": "4878205",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX LES CLAYES SOUS BOIS",
+  "city": "LES CLAYES SOUS BOIS",
+  "cp": "78340",
+  "address": "L'ARGOS 17 Avenue de Villepreux 78340 LES CLAYES SOUS BOIS",
+  "id_ffc": "4878219",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "MONTESSON BMX",
+  "city": "MONTESSON",
+  "cp": "78360",
+  "address": "Mairie de Montesson Place Roland Gauthier 78360 MONTESSON",
+  "id_ffc": "4878244",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "VOISINS BMX CLUB",
+  "city": "VOISINS LE BRETONNEUX",
+  "cp": "78960",
+  "address": "Hôtel de ville PLACE CHARLES DE GAULLE PISTE : 48,7626 N ; 2,0397 E /RUE SAINT FRANCOIS D'ASSISE 78960 VOISINS LE BRETONNEUX",
+  "id_ffc": "4878208",
+  "region": "ile-de-france",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX RIDING CLUB",
+  "city": "PONT D OUILLY",
+  "cp": "14690",
+  "address": "4 Les Landes 14690 PONT D OUILLY",
+  "id_ffc": "4914575",
+  "region": "normandie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX VIROIS",
+  "city": "VIRE",
+  "cp": "14500",
+  "address": "Rue André Malraux 14500 VIRE",
+  "id_ffc": "4914324",
+  "region": "normandie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CAEN BMX",
+  "city": "CAEN",
+  "cp": "14000",
+  "address": "15 avenue du 19 mars 1962 14000 CAEN",
+  "id_ffc": "4914300",
+  "region": "normandie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "ES LITTRY",
+  "city": "LE MOLAY LITTRY",
+  "cp": "14330",
+  "address": "Mairie Place du Marché 14330 LE MOLAY LITTRY",
+  "id_ffc": "4914135",
+  "region": "normandie",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "freestyle",
+   "gravel",
+   "piste",
+   "polo-velo",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "ESC BICROSS CLUB DE  MARTRAGNY",
+  "city": "MOULINS EN BESSIN",
+  "cp": "14740",
+  "address": "Mairie Rue de Creully 14740 MOULINS EN BESSIN",
+  "id_ffc": "4914306",
+  "region": "normandie",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "EVREUX BMX",
+  "city": "EVREUX",
+  "cp": "27000",
+  "address": "13 Rue du Val Iton 27000 EVREUX",
+  "id_ffc": "4927303",
+  "region": "normandie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "VERNEUIL BMX",
+  "city": "VERNEUIL SUR AVRE",
+  "cp": "27130",
+  "address": "Rond Point de la Victoire 27130 VERNEUIL SUR AVRE",
+  "id_ffc": "4927304",
+  "region": "normandie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CENTRE MANCHE",
+  "city": "LA HAYE DU PUITS",
+  "cp": "50250",
+  "address": "Artaug 3 ZA du Carrousel 50250 LA HAYE DU PUITS",
+  "id_ffc": "4950560",
+  "region": "normandie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CHERBOURG BMX",
+  "city": "CHERBOURG EN COTENTIN",
+  "cp": "50460",
+  "address": "3 Avenue de Couville 50460 CHERBOURG EN COTENTIN",
+  "id_ffc": "4950363",
+  "region": "normandie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "VC CONDE SUR VIRE",
+  "city": "CONDE SUR VIRE",
+  "cp": "50890",
+  "address": "46 Route de Torigni 50890 CONDE SUR VIRE",
+  "id_ffc": "4950227",
+  "region": "normandie",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "ARGENTAN BMX",
+  "city": "ARGENTAN",
+  "cp": "61200",
+  "address": "Maison des associations Maupassant - Salle 17 12 Rue des Flandres 61200 ARGENTAN",
+  "id_ffc": "4961515",
+  "region": "normandie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB DE FLERS",
+  "city": "MESSEI",
+  "cp": "61440",
+  "address": "7 Rue Jean Dumas 61440 MESSEI",
+  "id_ffc": "4961323",
+  "region": "normandie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CORBENOIS PAYS D'ALENCON",
+  "city": "ST GERMAIN DU CORBEIS",
+  "cp": "61000",
+  "address": "7 rue du 19 mars 1962 61000 ST GERMAIN DU CORBEIS",
+  "id_ffc": "4961412",
+  "region": "normandie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "AAC BMX  PETIT COURONNE",
+  "city": "PETIT COURONNE",
+  "cp": "76650",
+  "address": "L'Archipel Rue Pierre Naudin 76650 PETIT COURONNE",
+  "id_ffc": "4976313",
+  "region": "normandie",
+  "disciplines": [
+   "bmx",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "AS TREPORT CYCLISME",
+  "city": "LE TREPORT",
+  "cp": "76470",
+  "address": "Mairie du Tréport BP1 76470 LE TREPORT",
+  "id_ffc": "4976266",
+  "region": "normandie",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "AST BMX RACE",
+  "city": "LE MESNIL REAUME",
+  "cp": "76260",
+  "address": "38 Rue du Chasse Marée 76260 LE MESNIL REAUME",
+  "id_ffc": "4976520",
+  "region": "normandie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB MONTIVILLIERS",
+  "city": "MONTIVILLIERS",
+  "cp": "76290",
+  "address": "1 Place François Mitterand 76290 MONTIVILLIERS",
+  "id_ffc": "4976570",
+  "region": "normandie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CO BOLBEC NOINTOT BMX",
+  "city": "BOLBEC",
+  "cp": "76210",
+  "address": "A l'attention de Mr LEGER Yvon Hotel de ville 9 square du Général Leclerc 76210 BOLBEC",
+  "id_ffc": "4976314",
+  "region": "normandie",
+  "disciplines": [
+   "bmx",
+   "polo-velo"
+  ]
+ },
+ {
+  "title": "LA FEUILLIE CYCLISTE",
+  "city": "LA FEUILLIE",
+  "cp": "76220",
+  "address": "12 rue du Centre 76220 LA FEUILLIE",
+  "id_ffc": "4976461",
+  "region": "normandie",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "gravel",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "NORMANDY BMX CLUB SOTTEVILLAIS",
+  "city": "SOTTEVILLE LES ROUEN",
+  "cp": "76300",
+  "address": "35 rue Claudine Guérin 76300 SOTTEVILLE LES ROUEN",
+  "id_ffc": "4976319",
+  "region": "normandie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "TEAM POWER 76",
+  "city": "SAINT JACQUES SUR DARNETAL",
+  "cp": "76160",
+  "address": "3903 rue des Canadiens 76160 SAINT JACQUES SUR DARNETAL",
+  "id_ffc": "4976550",
+  "region": "normandie",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "freestyle",
+   "piste",
+   "polo-velo",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VC LILLEBONNAIS",
+  "city": "LILLEBONNE",
+  "cp": "76170",
+  "address": "2 Rue du Lin 76170 LILLEBONNE",
+  "id_ffc": "4976082",
+  "region": "normandie",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "YERVILLE TEAM CYCLISME",
+  "city": "YERVILLE",
+  "cp": "76760",
+  "address": "1 Place Jacques Chirac 76760 YERVILLE",
+  "id_ffc": "4976563",
+  "region": "normandie",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "COGNAC BMX",
+  "city": "COGNAC",
+  "cp": "16100",
+  "address": "Couvent des Récollets - 53 Route d'Angoulême 16100 COGNAC",
+  "id_ffc": "5016230",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX BREUILLET",
+  "city": "BREUILLET",
+  "cp": "17920",
+  "address": "28 Rue du Centre Mairie de Breuillet 17920 BREUILLET",
+  "id_ffc": "5017205",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB SAINTAIS",
+  "city": "SAINTES",
+  "cp": "17100",
+  "address": "Maison des Associations 31 Rue du Cormier 17100 SAINTES",
+  "id_ffc": "5017126",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX LA ROCHELLE",
+  "city": "AYTRE",
+  "cp": "17440",
+  "address": "5 rue de la Goelette 17440 AYTRE",
+  "id_ffc": "5017190",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "PC OLERONAIS",
+  "city": "ST PIERRE D'OLERON",
+  "cp": "17310",
+  "address": "20 RUE DE LA REPUBLIQUE 17310 ST PIERRE D'OLERON",
+  "id_ffc": "5017042",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "vtt"
+  ]
+ },
+ {
+  "title": "UV ANGERIENNE",
+  "city": "17400 ST JEAN D ANGELY",
+  "cp": "30041",
+  "address": "Pôle cycliste Aumonerie Rue Philippe JANET BP 30041 17400 ST JEAN D ANGELY",
+  "id_ffc": "5017053",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "CREUSE OXYGENE",
+  "city": "GUERET GUERET",
+  "cp": "23000",
+  "address": "5 rue Paul Louis Grenier 23000 GUERET GUERET",
+  "id_ffc": "5023029",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "gravel",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX CLUB NIORTAIS",
+  "city": "NIORT",
+  "cp": "79000",
+  "address": "7 Chemin du Moindreau 79000 NIORT",
+  "id_ffc": "5079130",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "SAINT LEGER BMX",
+  "city": "ST LEGER DE LA MARTINIERE 79500",
+  "cp": "79500",
+  "address": "Route de Gaschet 79500 ST LEGER DE LA MARTINIERE 79500",
+  "id_ffc": "5079175",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BICROSS CLUB DU TERRASSONNAIS",
+  "city": "TERRASSON LAVILLEDIEU",
+  "cp": "24120",
+  "address": "Mairie 12 avenue Charles de Gaulles 24120 TERRASSON LAVILLEDIEU",
+  "id_ffc": "5024276",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "ARTIGUES VELO CLUB",
+  "city": "ARTIGUES PRES BORDEAUX",
+  "cp": "33370",
+  "address": "7 Allee de Gascogne 33370 ARTIGUES PRES BORDEAUX",
+  "id_ffc": "5033066",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "AVENSAN VELO NATURE",
+  "city": "AVENSAN",
+  "cp": "33480",
+  "address": "3 place Saint Pierre 33480 AVENSAN",
+  "id_ffc": "5033049",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BICROSS DE MIOS",
+  "city": "MIOS",
+  "cp": "33830",
+  "address": "80 route de Masquet 33830 MIOS",
+  "id_ffc": "5033080",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX GUJANAIS",
+  "city": "GUJAN MESTRAS",
+  "cp": "33470",
+  "address": "58 Allee Edouard Branly 33470 GUJAN MESTRAS",
+  "id_ffc": "5033078",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CANEJAN BMX CLUB",
+  "city": "CANEJAN",
+  "cp": "33610",
+  "address": "Stade des Peyreres 33610 CANEJAN",
+  "id_ffc": "5033074",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CAVIGNAC BMX CLUB",
+  "city": "CAVIGNAC",
+  "cp": "33620",
+  "address": "61 Avenue de Paris 33620 CAVIGNAC",
+  "id_ffc": "5033079",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "STADE BORDELAIS BMX",
+  "city": "BORDEAUX CEDEX",
+  "cp": "33019",
+  "address": "30 rue Virginia - BP 40 33019 BORDEAUX CEDEX",
+  "id_ffc": "5033064",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx",
+   "freestyle",
+   "vtt"
+  ]
+ },
+ {
+  "title": "US BOUSCATAISE BMX",
+  "city": "LE BOUSCAT",
+  "cp": "33110",
+  "address": "US BOUSCAT BMX 88 rue des Ecus 33110 LE BOUSCAT",
+  "id_ffc": "5033045",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "AS ST JUNIEN BMX",
+  "city": "SAINT JUNIEN",
+  "cp": "87200",
+  "address": "Esplanade du Chatelard 87200 SAINT JUNIEN",
+  "id_ffc": "5087042",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX  CLUB DE LIMOGES",
+  "city": "LIMOGES",
+  "cp": "87280",
+  "address": "2 allée des Platanes 87280 LIMOGES",
+  "id_ffc": "5087044",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX VAL DU TAURION",
+  "city": "SAINT PRIEST TAURION",
+  "cp": "87480",
+  "address": "Mairie 24 rue Jean Gagnant 87480 SAINT PRIEST TAURION",
+  "id_ffc": "5087054",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CONDAT BMX CLUB",
+  "city": "CONDAT/VIENNE",
+  "cp": "87920",
+  "address": "Avenue de Limoges 87920 CONDAT/VIENNE",
+  "id_ffc": "5087029",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "STADE MONTOIS BMX",
+  "city": "MONT DE MARSAN",
+  "cp": "40000",
+  "address": "346 Avenue du Stade 40000 MONT DE MARSAN",
+  "id_ffc": "5040173",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CC MARMANDAIS",
+  "city": "MARMANDE",
+  "cp": "47200",
+  "address": "76 rue Antoine de Saint Exupery 47200 MARMANDE",
+  "id_ffc": "5047207",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "LVC TONNEINS",
+  "city": "TONNEINS",
+  "cp": "47400",
+  "address": "Immeuble de Tappol rue St Croix 47400 TONNEINS",
+  "id_ffc": "5047219",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "ASSAT VTT CLUB",
+  "city": "ASSAT",
+  "cp": "64510",
+  "address": "22 rue de la Judee 64510 ASSAT",
+  "id_ffc": "5064357",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BICROSS CLUB DENGUIN",
+  "city": "DENGUIN",
+  "cp": "64230",
+  "address": "Place de la Mairie 64230 DENGUIN",
+  "id_ffc": "5064335",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "PAU BMX CLUB",
+  "city": "PAU",
+  "cp": "64000",
+  "address": "4 rue des Cinqs Monts 64000 PAU",
+  "id_ffc": "5064351",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "freestyle",
+   "vtt"
+  ]
+ },
+ {
+  "title": "UCS ANGLET",
+  "city": "ANGLET",
+  "cp": "64600",
+  "address": "Centre Sportif Haitz Pean Promenade du Parc BELAY 64600 ANGLET",
+  "id_ffc": "5064327",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "UCC VIVONNE",
+  "city": "VIVONNE",
+  "cp": "86370",
+  "address": "MAIRIE DE VIVONNE 4 Avenue de Bordeaux 86370 VIVONNE",
+  "id_ffc": "5086105",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "UV POITIERS",
+  "city": "POITIERS",
+  "cp": "86000",
+  "address": "OMS 22 Place Charles de Gaulle 86000 POITIERS",
+  "id_ffc": "5086071",
+  "region": "nouvelle-aquitaine",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "e-cycling",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "GUIDON FUXEEN",
+  "city": "FOIX",
+  "cp": "09000",
+  "address": "Maison des Associations 1 Avenue de l'Ariège 09000 FOIX",
+  "id_ffc": "5109090",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route"
+  ]
+ },
+ {
+  "title": "VELO CLUB DU PAYS D'OLMES",
+  "city": "AIGUES-VIVES",
+  "cp": "09600",
+  "address": "Le Kart'Are 09600 AIGUES-VIVES",
+  "id_ffc": "5109054",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "ZERO NINE BMX",
+  "city": "09104 PAMIERS CEDEX",
+  "cp": "20170",
+  "address": "Maison des associations 7 Bis Rue St Vincent BP20170 09104 PAMIERS CEDEX",
+  "id_ffc": "5109326",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "AVEYRON BMX",
+  "city": "VALADY",
+  "cp": "12330",
+  "address": "13 Rue du 10 Août 1944 Nuces 12330 VALADY",
+  "id_ffc": "5112186",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CESAR BIKE",
+  "city": "LAUDUN",
+  "cp": "30290",
+  "address": "Chez Mr Vissac René 120 IMP COLLETTE 30290 LAUDUN",
+  "id_ffc": "5130020",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "vtt"
+  ]
+ },
+ {
+  "title": "LACHTOUTEAM CVN",
+  "city": "LA GRAND COMBE",
+  "cp": "30110",
+  "address": "19 Rue des OLIVIERS 30110 LA GRAND COMBE",
+  "id_ffc": "5130001",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "NIMES CYCLISME",
+  "city": "NIMES",
+  "cp": "30000",
+  "address": "12 RUE RUFFI 30000 NIMES",
+  "id_ffc": "5130003",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VC MT.AIGOUAL PAYS VIGANAIS",
+  "city": "VALLERAUGUE",
+  "cp": "30570",
+  "address": "HOTEL DU PARC L'ESPEROU 30570 VALLERAUGUE",
+  "id_ffc": "5130038",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "UV AUCH GG",
+  "city": "AUCH",
+  "cp": "32000",
+  "address": "Rue Barbanègre 32000 AUCH",
+  "id_ffc": "5132048",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BLAGNAC BMX",
+  "city": "BLAGNAC",
+  "cp": "31700",
+  "address": "1 Place Louis Puig Hôtel de Ville 31700 BLAGNAC",
+  "id_ffc": "5131170",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "COMMINGES BIKE",
+  "city": "SAINT GAUDENS",
+  "cp": "31800",
+  "address": "62 Avenue de l'Isle Stade Jules Ribet 31800 SAINT GAUDENS",
+  "id_ffc": "5131008",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "gravel",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "GSC BLAGNAC VELO SPORT 31",
+  "city": "BLAGNAC",
+  "cp": "31700",
+  "address": "Rue des Eglantines 31700 BLAGNAC",
+  "id_ffc": "5131053",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "LUCHON LOURON CYCLISME",
+  "city": "CIER DE LUCHON",
+  "cp": "31110",
+  "address": "Chez Madame Nadine ESPOUY 50 Chemin du Bié 31110 CIER DE LUCHON",
+  "id_ffc": "5131161",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "RIDIN'FAMILY",
+  "city": "LACROIX FALGARDE",
+  "cp": "31120",
+  "address": "25 Route de la Gleyzette 31120 LACROIX FALGARDE",
+  "id_ffc": "5131300",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "freestyle",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BARBAZAN BMX",
+  "city": "TARBES",
+  "cp": "65000",
+  "address": "Chez Fabrice MIR 9 Rue François Marques 65000 TARBES",
+  "id_ffc": "5165174",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "LOURDES VTT",
+  "city": "LOURDES",
+  "cp": "65100",
+  "address": "2 Place de l'Abattoir 65100 LOURDES",
+  "id_ffc": "5165151",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "SOUES OMNISPORT BMX",
+  "city": "SOUES",
+  "cp": "65430",
+  "address": "Rue André Fourcade Mairie de Soues 65430 SOUES",
+  "id_ffc": "5165169",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "TARBES CYCLISTE",
+  "city": "TARBES",
+  "cp": "65000",
+  "address": "Vélodrome 34 Avenue de Huesca 65000 TARBES",
+  "id_ffc": "5165207",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "ASSOCIATION ATTITUDE",
+  "city": "MONTPELLIER",
+  "cp": "34000",
+  "address": "15 RUE STE URSULE 34000 MONTPELLIER",
+  "id_ffc": "5134013",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "freestyle"
+  ]
+ },
+ {
+  "title": "BMX CLUB FRONTIGNAN",
+  "city": "34110 FRONTIGNAN",
+  "cp": "30628",
+  "address": "PISTE DE BMX AIRE DES LOISIRS RUE du 81e Régiment D’Infanterie-BP 30628 34110 FRONTIGNAN",
+  "id_ffc": "5134100",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "FISE ACADEMY",
+  "city": "BAILLARGUES",
+  "cp": "34670",
+  "address": "3 rue Christian Andre-Benoit 34670 BAILLARGUES",
+  "id_ffc": "5134084",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "freestyle"
+  ]
+ },
+ {
+  "title": "KBMX",
+  "city": "MAGALAS",
+  "cp": "34480",
+  "address": "1889 RUE DE LA PROMENADE MAIRIE DE MAGALAS 34480 MAGALAS",
+  "id_ffc": "5134035",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "PASSION BMX SERIGNAN",
+  "city": "SERIGNAN",
+  "cp": "34410",
+  "address": "6 RUE DES LUCIOLES 34410 SERIGNAN",
+  "id_ffc": "5134057",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "freestyle"
+  ]
+ },
+ {
+  "title": "VELO CLUB MELGORIEN MAUGUIO CARNON",
+  "city": "MAUGUIO",
+  "cp": "34130",
+  "address": "MAIRIE DE MAUGUIO PLACE DE LA LIBERATION CHARLES DE GAULLE 34130 MAUGUIO",
+  "id_ffc": "5134082",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "LE ROC DE LA LEGUE",
+  "city": "CHANAC",
+  "cp": "48230",
+  "address": "MAIRIE - PLACE DE LA BASCULE 48230 CHANAC",
+  "id_ffc": "5148098",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BIKE RACING ACADEMY",
+  "city": "SAIX",
+  "cp": "81710",
+  "address": "Espace de Loisirs \" Les Etangs \" 550 Chemin des Hérommières 81710 SAIX",
+  "id_ffc": "5181266",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle"
+  ]
+ },
+ {
+  "title": "BCC CAMPSAS",
+  "city": "CAMPSAS",
+  "cp": "82370",
+  "address": "2370 Route du Château d'Eau 82370 CAMPSAS",
+  "id_ffc": "5182259",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "MONTAUBAN CYCLISME 82",
+  "city": "MONTAUBAN",
+  "cp": "82000",
+  "address": "345 Chemin des Oules 82000 MONTAUBAN",
+  "id_ffc": "5182320",
+  "region": "occitanie",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX CLUB DE VALLET",
+  "city": "VALLET",
+  "cp": "44330",
+  "address": "11 BOULEVARD PUSTERLE 44330 VALLET",
+  "id_ffc": "5244623",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB LA CHEVROLIERE",
+  "city": "LA CHEVROLIERE",
+  "cp": "44118",
+  "address": "2 PLACE DE L'HOTEL DE VILLE 44118 LA CHEVROLIERE",
+  "id_ffc": "5244634",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX SAVENAY",
+  "city": "SAVENAY",
+  "cp": "44260",
+  "address": "2 RUE DU PARC DES SPORTS 44260 SAVENAY",
+  "id_ffc": "5244612",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CARQUEFOU BMX CLUB",
+  "city": "CARQUEFOU",
+  "cp": "44470",
+  "address": "SALLE ALELLA RUE VICTOR HUGO 44470 CARQUEFOU",
+  "id_ffc": "5244633",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "MACHECOUL BMX CLUB",
+  "city": "MACHECOUL",
+  "cp": "44270",
+  "address": "14 RUE DE LA TAILLEE 44270 MACHECOUL",
+  "id_ffc": "5244607",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "NOS BMX CLUB-NOZAY",
+  "city": "NOZAY",
+  "cp": "44170",
+  "address": "6 PLACE DE LA GARE 44170 NOZAY",
+  "id_ffc": "5244603",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "PRESQU'ILE BMX",
+  "city": "LA TURBALLE",
+  "cp": "44420",
+  "address": "10 RUE DE LA FONTAINE 44420 LA TURBALLE",
+  "id_ffc": "5244635",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "SAINT NAZAIRE BMX CLUB",
+  "city": "SAINT NAZAIRE",
+  "cp": "44600",
+  "address": "170 ROUTE DE LA COTE 44600 SAINT NAZAIRE",
+  "id_ffc": "5244609",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "UC NANTES ATLANTIQUE",
+  "city": "NANTES",
+  "cp": "44000",
+  "address": "25 RUE GASTON TURPIN 44000 NANTES",
+  "id_ffc": "5244007",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "freestyle",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "CHOLET BMX",
+  "city": "CHOLET",
+  "cp": "49300",
+  "address": "SQUARE DE LIRE COMPLEXE SPORTIF JOACHIM DU BELLAY 49300 CHOLET",
+  "id_ffc": "5249608",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "RIDE ON BIKE",
+  "city": "AVRILLE",
+  "cp": "49240",
+  "address": "LIEU DIT LES BOUGUELIERES BRAIN SUR LONGUENEE 49240 AVRILLE",
+  "id_ffc": "5249630",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "SCO CYCLISME ANGERS",
+  "city": "ANGERS",
+  "cp": "49000",
+  "address": "19 RUE MONTESQUIEU 49000 ANGERS",
+  "id_ffc": "5249013",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "TURQUANT BMX",
+  "city": "TURQUANT",
+  "cp": "49730",
+  "address": "PLACE DE LA MAIRIE 49730 TURQUANT",
+  "id_ffc": "5249629",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CHATEAU-GONTIER",
+  "city": "CHATEAU GONTIER SUR MAYENNE",
+  "cp": "53200",
+  "address": "RUE DU VAL DE LOIRE 53200 CHATEAU GONTIER SUR MAYENNE",
+  "id_ffc": "5253636",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "US CHANGE BMX",
+  "city": "CHANGE",
+  "cp": "53810",
+  "address": "RUE CONSTANTIN MATTEI 53810 CHANGE",
+  "id_ffc": "5253606",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "LE MANS SARTHE VELO",
+  "city": "LE MANS",
+  "cp": "72100",
+  "address": "11 Impasse des Violettes 72100 LE MANS",
+  "id_ffc": "5272285",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VELO CLUB DE CONLIE",
+  "city": "CONLIE",
+  "cp": "72240",
+  "address": "MAIRIE PLACE DES HALLES 72240 CONLIE",
+  "id_ffc": "5272269",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx",
+   "route"
+  ]
+ },
+ {
+  "title": "AIZENAY BMX CLUB",
+  "city": "NOTRE DAME DE RIEZ",
+  "cp": "85270",
+  "address": "AVENUE DE VERDUN 85270 NOTRE DAME DE RIEZ",
+  "id_ffc": "5285614",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB CHAMPAGNELAIS",
+  "city": "CHAMPAGNE LES MARAIS",
+  "cp": "85450",
+  "address": "COMPLEXE SPORTIF DES PIRONNIERES 85450 CHAMPAGNE LES MARAIS",
+  "id_ffc": "5285605",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB LA ROCHE SUR YON",
+  "city": "LA ROCHE SUR YON",
+  "cp": "85000",
+  "address": "9 RUE CHARLES PEGUY MAISON DE QUARTIER 85000 LA ROCHE SUR YON",
+  "id_ffc": "5285604",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CYCLISME REGION POUZAUGES",
+  "city": "POUZAUGES",
+  "cp": "85700",
+  "address": "4 RUE DE MILETTE 85700 POUZAUGES",
+  "id_ffc": "5285281",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "freestyle",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "FONTENAY RIDERS",
+  "city": "FONTENAY LE COMTE",
+  "cp": "85200",
+  "address": "MAISON DES ASSOCIATIONS FRANCOIS FLOCH 15 RUE DE LA SABLIERE 85200 FONTENAY LE COMTE",
+  "id_ffc": "5285615",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "TEAM EVO 974",
+  "city": "LA GARNACHE",
+  "cp": "85710",
+  "address": "37 CHEMIN DU MARCHANTIER 85710 LA GARNACHE",
+  "id_ffc": "5285616",
+  "region": "pays-de-la-loire",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "DIGNE VELO ADDICTION",
+  "city": "DIGNE LES BAINS",
+  "cp": "04000",
+  "address": "CURE VINCENT APPT 55 BAT D 02 RUE DU 19 MARS 1962 04000 DIGNE LES BAINS",
+  "id_ffc": "5304228",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "vtt"
+  ]
+ },
+ {
+  "title": "TEAM GREOUX BIKE",
+  "city": "GREOUX LES BAINS",
+  "cp": "04800",
+  "address": "Office du Tourisme 7, place de l'Hotel de ville 04800 GREOUX LES BAINS",
+  "id_ffc": "5304248",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "COLLERIDER BMX",
+  "city": "LA COLLE SUR LOUP",
+  "cp": "06480",
+  "address": "CHEMIN DE LA TOUR PARC DE LA GUERINIERE 06480 LA COLLE SUR LOUP",
+  "id_ffc": "5306053",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx",
+   "freestyle",
+   "vtt"
+  ]
+ },
+ {
+  "title": "US CAGNES BMX",
+  "city": "CAGNES SUR MER",
+  "cp": "06800",
+  "address": "19 CHEMIN DES NOISETIERS 06800 CAGNES SUR MER",
+  "id_ffc": "5306046",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "US PEGOMAS CYCLISME",
+  "city": "PEGOMAS",
+  "cp": "06580",
+  "address": "1 AVENUE FREDERIC MISTRAL SALLE IRIS 06580 PEGOMAS",
+  "id_ffc": "5306040",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "ALL ROAD FAMILY",
+  "city": "MARTIGUES",
+  "cp": "13500",
+  "address": "1 AVENUE JOSE NOBRE ZI SUD 13500 MARTIGUES",
+  "id_ffc": "5313014",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx",
+   "freestyle"
+  ]
+ },
+ {
+  "title": "AMICALE VITROLLES SPORT CYCLISME",
+  "city": "VITROLLES",
+  "cp": "13127",
+  "address": "HENNY Thierry 9 RUE LOUIS BLERIOT LES VIGNETTES 13127 VITROLLES",
+  "id_ffc": "5313017",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route"
+  ]
+ },
+ {
+  "title": "BMX CLUB LES PENNES MIRABEAU",
+  "city": "LES PENNES MIRABEAU",
+  "cp": "13170",
+  "address": "SALLE TINO ROSSI 70 CHEMIN DE LA FERME 13170 LES PENNES MIRABEAU",
+  "id_ffc": "5313221",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB STE VICTOIRE",
+  "city": "TRETS",
+  "cp": "13530",
+  "address": "PLACE DU 14 JUILLET 13530 TRETS",
+  "id_ffc": "5313222",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CORNILLON",
+  "city": "CORNILLON - CONFOUX",
+  "cp": "13250",
+  "address": "MAIRIE DE CORNILLON PLACE DE LA MAIRIE 13250 CORNILLON - CONFOUX",
+  "id_ffc": "5313215",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "FAMILY BMX TARASCON",
+  "city": "TARASCON",
+  "cp": "13150",
+  "address": "MAISON DES SPORTS BD ALPHONSE DAUDET 13150 TARASCON",
+  "id_ffc": "5313013",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "VITROLLES VELO CLUB BMX",
+  "city": "VITROLLES",
+  "cp": "13127",
+  "address": "Velodrome Aimée Constant Avenue Gerard Toulon 13127 VITROLLES",
+  "id_ffc": "5313212",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross"
+  ]
+ },
+ {
+  "title": "BUNNY HOP CLUB",
+  "city": "BRIANCON",
+  "cp": "05100",
+  "address": "GUIONNET FRANCK 42 RUE PASTEUR 05100 BRIANCON",
+  "id_ffc": "5305013",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VAL BUECH H-A CYCLISME",
+  "city": "SAINT ANDRE DE ROSANS",
+  "cp": "05150",
+  "address": "335 CHEMIN DU PRE D'AUROUX 05150 SAINT ANDRE DE ROSANS",
+  "id_ffc": "5305049",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX CLUB DE HYERES",
+  "city": "HYERES",
+  "cp": "83400",
+  "address": "2 RUE DE LA GALERE L'AYGUADE 83400 HYERES",
+  "id_ffc": "5383014",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX DRACENOIS",
+  "city": "DRAGUIGNAN",
+  "cp": "83300",
+  "address": "Centre Joseph Collomp place Cassin Piste 338 chemin de la source 83300 DRAGUIGNAN",
+  "id_ffc": "5383048",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX GHOSTRIDERS",
+  "city": "TOULON",
+  "cp": "83200",
+  "address": "200 BD EMILE JACQUEMIN LA VALBOURDINE N°8 83200 TOULON",
+  "id_ffc": "5383016",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx",
+   "piste"
+  ]
+ },
+ {
+  "title": "BMX LUCOIS",
+  "city": "LE LUC EN PROVENCE",
+  "cp": "83340",
+  "address": "COMPLEXE SPORTIF NELSON MANDELA AVENUE PIERRE MENDES FRANCE 83340 LE LUC EN PROVENCE",
+  "id_ffc": "5383062",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX MAXIMOIS",
+  "city": "SAINTE MAXIME",
+  "cp": "83120",
+  "address": "1 Chemin des Ribes 83120 SAINTE MAXIME",
+  "id_ffc": "5383033",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX PUGET VILLE",
+  "city": "PUGET VILLE",
+  "cp": "83390",
+  "address": "HOTEL DE VILLE 368 rue de la Libération 83390 PUGET VILLE",
+  "id_ffc": "5383089",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "AC BOLLENE",
+  "city": "BOLLENE",
+  "cp": "84500",
+  "address": "180 CHEMIN DE LA MALLEPOSTE 84500 BOLLENE",
+  "id_ffc": "5384047",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX CARPENTRAS",
+  "city": "CARPENTRAS",
+  "cp": "84200",
+  "address": "COMPLEXE SPORTIF PIERRE DE COUBERTIN 841 AVENUE PIERRE DE COUBERTIN 84200 CARPENTRAS",
+  "id_ffc": "5384211",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BMX CLUB AVIGNON LES ANGLES",
+  "city": "AVIGNON",
+  "cp": "84000",
+  "address": "BMX CLUB AVIGNON LES ANGLES 2 rue du Calavon, résidence les Hirondelles 84000 AVIGNON",
+  "id_ffc": "5384210",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB CAVAILLON",
+  "city": "CAVAILLON",
+  "cp": "84300",
+  "address": "PISTE DU STADE VIVIAN NIZZOLA AV ALPHONSE JAUFFRET 84300 CAVAILLON",
+  "id_ffc": "5384203",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB ENTRECHAUX",
+  "city": "ENTRECHAUX",
+  "cp": "84110",
+  "address": "HOTEL DE VILLE 1 PLACE PAUL GUINTRAND 84110 ENTRECHAUX",
+  "id_ffc": "5384245",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX CLUB SARRIANS",
+  "city": "SARRIANS",
+  "cp": "84260",
+  "address": "GARCIA STEPHANE 22 Avenue de Camargue 84260 SARRIANS",
+  "id_ffc": "5384236",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX ORGANISATION",
+  "city": "PERNES LES FONTAINES",
+  "cp": "84810",
+  "address": "371B AV CHARLES DE GAULLE 84810 PERNES LES FONTAINES",
+  "id_ffc": "5384155",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX PERNOIS",
+  "city": "PERNES LES FONTAINES",
+  "cp": "84210",
+  "address": "391 AVENUE RENE CHAR 84210 PERNES LES FONTAINES",
+  "id_ffc": "5384170",
+  "region": "provence-alpes-cote-dazur",
+  "disciplines": [
+   "bmx",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "A. CYCL. &amp; DE LA VERDURE DE P/BOURG",
+  "city": "PETIT-BOURG",
+  "cp": "97170",
+  "address": "C% GUEPPOIS SPORT 131 RUE SCHOELCHER 97170 PETIT-BOURG",
+  "id_ffc": "6097137",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "AMSC UNIVERS PLUS",
+  "city": "LES ABYMES LES ABYMES",
+  "cp": "97139",
+  "address": "QUATRE CHEMINS IMPASSE COZEMA Maison Serge COCO 97139 LES ABYMES LES ABYMES",
+  "id_ffc": "6097195",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "ANGE DU VELO",
+  "city": "LAMENTIN",
+  "cp": "97129",
+  "address": "Rue du 19 Mars 1989 Borel 97129 LAMENTIN",
+  "id_ffc": "6097031",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "AS. JEUNESSE CYCLISTE BOUILLANTAIS",
+  "city": "BOUILLANTE",
+  "cp": "97125",
+  "address": "LOCAL DOUBOUT O KA PALETUVIERS MALENDURE 97125 BOUILLANTE",
+  "id_ffc": "6097154",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "ASCPIEG CMCAS EDF",
+  "city": "POINTE-A-PITRE",
+  "cp": "97110",
+  "address": "RUE EUVREMONT GENE BERGEVIN 97110 POINTE-A-PITRE",
+  "id_ffc": "6097187",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "ASSOCIATION SPORTIVE CULTURELLE ET ENTREAIDE SAINT MARTINOIS",
+  "city": "SAINT-MARTIN",
+  "cp": "97150",
+  "address": "Chez Rigobert BENJAMIN Lot 2 Résidence SAVANA Morne Emile 97150 SAINT-MARTIN",
+  "id_ffc": "6097042",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "CONVERGENCE S. C. ABYMIENNE",
+  "city": "LES ABYMES",
+  "cp": "97139",
+  "address": "SECTION CARAQUE MAISON CLAUDEON MARIE ANGE 97139 LES ABYMES",
+  "id_ffc": "6097192",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "EXCELSIOR",
+  "city": "BAIE-MAHAULT",
+  "cp": "97122",
+  "address": "STADE CLAUDE VIRAPIN CALVAIRE 97122 BAIE-MAHAULT",
+  "id_ffc": "6097005",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "GUIDON SPRINTER CANALIEN CYCLING TEAM",
+  "city": "PETIT-CANAL",
+  "cp": "97131",
+  "address": "7 Rue Euvremont Gene 97131 PETIT-CANAL",
+  "id_ffc": "6097044",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "GWADA BIKERS 118",
+  "city": "SAINT-FRANCOIS",
+  "cp": "97118",
+  "address": "\"Tony Vélo\" RUE SCHOELCHER 97118 SAINT-FRANCOIS",
+  "id_ffc": "6097188",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "JEUNESSE CYCL. CAPESTERRIENNE",
+  "city": "CAPESTERRE",
+  "cp": "97130",
+  "address": "416 RES. Loïc PETIT 3 BP 54 97130 CAPESTERRE",
+  "id_ffc": "6097002",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "PEDALE DU LEVANT",
+  "city": "SAINT-FRANCOIS",
+  "cp": "97118",
+  "address": "Section Corrot Pombiray 97118 SAINT-FRANCOIS",
+  "id_ffc": "6097155",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "RAYON D'ARGENT",
+  "city": "CAPESTERRE BELLE-EAU",
+  "cp": "97130",
+  "address": "espace Roger Jeannette rue des Alamandas lot de Fonds Cacao 97130 CAPESTERRE BELLE-EAU",
+  "id_ffc": "6097181",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "TEAM JCO",
+  "city": "SAINT MARTIN",
+  "cp": "97150",
+  "address": "39 Rue de Conalita Quartier d'Orléans 97150 SAINT MARTIN",
+  "id_ffc": "6098014",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "polo-velo",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "TEAM.MANAGER 29 M",
+  "city": "BAIE MAHAULT",
+  "cp": "97122",
+  "address": "C/O BURO Club Guadeloupe Immeuble Simkel 1er étage 3617, 49 Boulevard de Houelbourg 97122 BAIE MAHAULT",
+  "id_ffc": "6097035",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "freestyle",
+   "piste",
+   "vtt"
+  ]
+ },
+ {
+  "title": "UNI SPORT LAMENTINOIS",
+  "city": "LAMENTIN",
+  "cp": "97129",
+  "address": "Résidence CHANTILLY BREFORT B.P 83 97129 LAMENTIN",
+  "id_ffc": "6097159",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VELO CLUB DE SANDY GROUND",
+  "city": "SAINT MARTIN",
+  "cp": "97150",
+  "address": "3 Rue Red Band Sandy Ground 97150 SAINT MARTIN",
+  "id_ffc": "6098019",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VELO CLUB DE T/RIVIERES",
+  "city": "TROIS-RIVIERES",
+  "cp": "97114",
+  "address": "ANCIENNE ECOLE DE SCHOELCHER 97114 TROIS-RIVIERES",
+  "id_ffc": "6097144",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VELO CLUB MOULIEN",
+  "city": "LE MOULE",
+  "cp": "97160",
+  "address": "33 Rue Cheik Anta Diop 97160 LE MOULE",
+  "id_ffc": "6097026",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VOITOFFI CLUB",
+  "city": "PETIT-CANAL",
+  "cp": "97131",
+  "address": "41 LOT. CORNET 97131 PETIT-CANAL",
+  "id_ffc": "6097209",
+  "region": "guadeloupe",
+  "disciplines": [
+   "bmx",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "CYCLO CLUB SAMARITAIN",
+  "city": "SAINTE MARIE",
+  "cp": "97230",
+  "address": "HALTE JUNIOR 2 RUE DE LA COCOTERAIE 97230 SAINTE MARIE",
+  "id_ffc": "6397009",
+  "region": "martinique",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "JEUNESSE CYCLISTE 231",
+  "city": "LE ROBERT",
+  "cp": "97231",
+  "address": "Foux à Chaux 97231 LE ROBERT",
+  "id_ffc": "6397020",
+  "region": "martinique",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "freestyle",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "KARAIBES CULTURE SPORTS",
+  "city": "FORT DE FRANCE",
+  "cp": "97200",
+  "address": "29 Rue François Arago 97200 FORT DE FRANCE",
+  "id_ffc": "6397042",
+  "region": "martinique",
+  "disciplines": [
+   "bmx",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "TEAM CYCLING FOYAL",
+  "city": "FORT DE FRANCE",
+  "cp": "97200",
+  "address": "123 Route de Balata 95 Résidence Tour Germaine Quartier Godissard 97200 FORT DE FRANCE",
+  "id_ffc": "6397041",
+  "region": "martinique",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "AMAZONIAN CYCLING DEVELOPMENT",
+  "city": "REMIRE-MONTJOLY",
+  "cp": "97354",
+  "address": "15 avenue Louis CARISTAN 97354 REMIRE-MONTJOLY",
+  "id_ffc": "6197022",
+  "region": "guyane",
+  "disciplines": [
+   "bmx",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "ESPOIR CYCLISTE GUYANAIS",
+  "city": "REMIRE MONTJOLY",
+  "cp": "97354",
+  "address": "901 H RTE DE LA CRIQUE FOUILLEE B.P 938 97354 REMIRE MONTJOLY",
+  "id_ffc": "6197002",
+  "region": "guyane",
+  "disciplines": [
+   "bmx",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "SPRINT CLUB DE MACOURIA",
+  "city": "TONATE-MACOURIA",
+  "cp": "97355",
+  "address": "5 ALLEE DES CAPUCINES - LOT EUCALYPTUS 97355 TONATE-MACOURIA",
+  "id_ffc": "6197008",
+  "region": "guyane",
+  "disciplines": [
+   "bmx",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VELO CLUB DE KOUROU",
+  "city": "KOUROU",
+  "cp": "97310",
+  "address": "4, Place Jacques Monod - BP 493 97310 KOUROU",
+  "id_ffc": "6197007",
+  "region": "guyane",
+  "disciplines": [
+   "bmx",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "BICROSS CLUB OMEGA",
+  "city": "BOIS DE NEFLES ST-PAUL",
+  "cp": "97411",
+  "address": "195 BIS chem Combavas 97411 BOIS DE NEFLES ST-PAUL",
+  "id_ffc": "6297002",
+  "region": "la-reunion",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "BMX RACE POSSESSION",
+  "city": "LA POSSESSION",
+  "cp": "97419",
+  "address": "50 chemin Salmacis 97419 LA POSSESSION",
+  "id_ffc": "6297079",
+  "region": "la-reunion",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "CILAOS BIKE TEAM",
+  "city": "CILAOS",
+  "cp": "97413",
+  "address": "21 rue des Citroniers 97413 CILAOS",
+  "id_ffc": "6297039",
+  "region": "la-reunion",
+  "disciplines": [
+   "bmx",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "CLUB SPORTIF SAINT DENIS BMX 974",
+  "city": "SAINT-DENIS",
+  "cp": "97400",
+  "address": "12 Rocade de l'Oasis Apt 83 - Résidence Le Mistral 97400 SAINT-DENIS",
+  "id_ffc": "6297007",
+  "region": "la-reunion",
+  "disciplines": [
+   "bmx",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "CYCLO CLUB BENEDICTINS",
+  "city": "SAINT-BENOIT",
+  "cp": "97470",
+  "address": "11 chemin Millecols Bras Madeleine 97470 SAINT-BENOIT",
+  "id_ffc": "6297073",
+  "region": "la-reunion",
+  "disciplines": [
+   "bmx",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "PORT PEDALES ASSOCIATION",
+  "city": "LE PORT CEDEX",
+  "cp": "97824",
+  "address": "C/O Office Municipal du Sport 81 rue de St-Paul BP 174 97824 LE PORT CEDEX",
+  "id_ffc": "6297001",
+  "region": "la-reunion",
+  "disciplines": [
+   "bmx",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "SAINT ANDRE CYCLING TEAM",
+  "city": "SAINT-ANDRE",
+  "cp": "97440",
+  "address": "272 ruelle Vavangues 97440 SAINT-ANDRE",
+  "id_ffc": "6297080",
+  "region": "la-reunion",
+  "disciplines": [
+   "bmx",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ },
+ {
+  "title": "VELO CLUB DU TAMPON",
+  "city": "LE TAMPON",
+  "cp": "97430",
+  "address": "9 BIS rue Auguste Lacaussade 97430 LE TAMPON",
+  "id_ffc": "6297019",
+  "region": "la-reunion",
+  "disciplines": [
+   "bmx"
+  ]
+ },
+ {
+  "title": "VELO CLUB SAINTE ROSE",
+  "city": "SAINTE-ROSE",
+  "cp": "97439",
+  "address": "130 BIS Route Nationale 2 Bonne Espérance 97439 SAINTE-ROSE",
+  "id_ffc": "6297077",
+  "region": "la-reunion",
+  "disciplines": [
+   "bmx",
+   "cyclisme-en-salle",
+   "cyclo-cross",
+   "e-cycling",
+   "gravel",
+   "piste",
+   "route",
+   "vtt"
+  ]
+ }
+]

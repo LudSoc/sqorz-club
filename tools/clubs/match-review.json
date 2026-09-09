@@ -1,0 +1,1817 @@
+[
+ {
+  "code": "CHARTR",
+  "count": 3323,
+  "best": {
+   "title": "C CHARTRES BMX",
+   "city": "CHARTRES",
+   "score": 99.2,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "C'CHARTRES CYCLISME",
+   "score": 99.2,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "BICLUB",
+  "count": 3126,
+  "best": {
+   "title": "BI CLUB CHAPELLOIS",
+   "city": "LA CHAPELLE ST MESMIN",
+   "score": 80,
+   "how": "prefix-title"
+  },
+  "second": {
+   "title": "BIKE CLUB SAINT SORLIN",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "LMPDES",
+  "count": 2506,
+  "best": {
+   "title": "LEMPDES BMX AUVERGNE",
+   "city": "LEMPDES",
+   "score": 60.6,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "PERNES",
+  "count": 2135,
+  "best": {
+   "title": "BMX ORGANISATION",
+   "city": "PERNES LES FONTAINES",
+   "score": 98.2,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "BMX PERNOIS",
+   "score": 98.2,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "STEVIC",
+  "count": 1786,
+  "best": {
+   "title": "US THIERVILLE CYCLISME",
+   "city": "VERDUN",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BMX CLUB STE VICTOIRE",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "LR-YON",
+  "count": 1748,
+  "best": {
+   "title": "BMX CLUB LA ROCHE SUR YON",
+   "city": "LA ROCHE SUR YON",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "LPMIRA",
+  "count": 1646,
+  "best": {
+   "title": "BMX CLUB LES PENNES MIRABEAU",
+   "city": "LES PENNES MIRABEAU",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "STAVER",
+  "count": 1578,
+  "best": {
+   "title": "ST AVERTIN SPORTS BMX",
+   "city": "SAINT AVERTIN",
+   "score": 80,
+   "how": "prefix-title"
+  },
+  "second": {
+   "title": "BMX ST PAUL VALLEE DU GIER",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "ARGTAN",
+  "count": 1556,
+  "best": {
+   "title": "ARGENTAN BMX",
+   "city": "ARGENTAN",
+   "score": 52.4,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "PTCOUR",
+  "count": 1327,
+  "best": {
+   "title": "AAC BMX  PETIT COURONNE",
+   "city": "PETIT COURONNE",
+   "score": 43.4,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "SPRINT CLUB DE MACOURIA",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "VITROL",
+  "count": 1310,
+  "best": {
+   "title": "AMICALE VITROLLES SPORT CYCLISME",
+   "city": "VITROLLES",
+   "score": 99.1,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "VITROLLES VELO CLUB BMX",
+   "score": 99.1,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "BLAGNA",
+  "count": 1272,
+  "best": {
+   "title": "BLAGNAC BMX",
+   "city": "BLAGNAC",
+   "score": 99.3,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "GSC BLAGNAC VELO SPORT 31",
+   "score": 99.3,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "STNAZA",
+  "count": 1237,
+  "best": {
+   "title": "SAINT NAZAIRE BMX CLUB",
+   "city": "SAINT NAZAIRE",
+   "score": 43.6,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "UVCA",
+  "count": 1230,
+  "best": {
+   "title": "U.V.C.A TROYES",
+   "city": "TROYES",
+   "score": 80,
+   "how": "prefix-title"
+  }
+ },
+ {
+  "code": "STBRIE",
+  "count": 1218,
+  "best": {
+   "title": "SAINT BRIEUC BMX",
+   "city": "PLOUFRAGAN",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "MONTME",
+  "count": 1199,
+  "best": {
+   "title": "MONTMELIAN BMX",
+   "city": "73800 MONTMELIAN",
+   "score": 89,
+   "how": "word-prefix"
+  },
+  "second": {
+   "title": "CJ MONT PRÈS CHAMBORD BMX",
+   "score": 85,
+   "how": "code-has-word"
+  }
+ },
+ {
+  "code": "USCBMX",
+  "count": 1157,
+  "best": {
+   "title": "AIN'PULSION COTIERE BMX",
+   "city": "THIL",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "US BOUSCATAISE BMX",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "ASTBMX",
+  "count": 1108,
+  "best": {
+   "title": "AST BMX RACE",
+   "city": "LE MESNIL REAUME",
+   "score": 80,
+   "how": "prefix-title"
+  },
+  "second": {
+   "title": "AIN'PULSION COTIERE BMX",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "AVNSAN",
+  "count": 1095,
+  "best": {
+   "title": "AVENSAN VELO NATURE",
+   "city": "AVENSAN",
+   "score": 60.6,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "CLUB AVENIR SAINT GEORGES",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "STMAXI",
+  "count": 1049,
+  "best": {
+   "title": "BMX MAXIMOIS",
+   "city": "SAINTE MAXIME",
+   "score": 35.6,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "RID07",
+  "count": 982,
+  "best": {
+   "title": "BMX RIDERS 07",
+   "city": "LAVILLEDIEU",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "CHANCX",
+  "count": 964,
+  "best": {
+   "title": "AS CHANCEAUX BMX",
+   "city": "CHANCEAUX SUR CHOISILLE",
+   "score": 41.8,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "VIRE",
+  "count": 960,
+  "best": {
+   "title": "BMX VIROIS",
+   "city": "VIRE",
+   "score": 99.6,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "VC CONDE SUR VIRE",
+   "score": 95,
+   "how": "word-exact"
+  }
+ },
+ {
+  "code": "LUCBMX",
+  "count": 952,
+  "best": {
+   "title": "LUC BMX",
+   "city": "LILLE",
+   "score": 80,
+   "how": "prefix-title"
+  },
+  "second": {
+   "title": "MONTLUCON BMX",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "CHROUX",
+  "count": 907,
+  "best": {
+   "title": "CHERBOURG BMX",
+   "city": "CHERBOURG EN COTENTIN",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BC CASTELROUSSIN",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "V-GIER",
+  "count": 850,
+  "best": {
+   "title": "BMX ST PAUL VALLEE DU GIER",
+   "city": "SAINT PAUL EN JAREZ",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "VELO CLUB MELGORIEN MAUGUIO CARNON",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "SE-BMX",
+  "count": 835,
+  "best": {
+   "title": "AIN'PULSION COTIERE BMX",
+   "city": "THIL",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "FOUILLOUSE BMX",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "STGERM",
+  "count": 769,
+  "best": {
+   "title": "BC ST GERMINOIS",
+   "city": "ST GERMAIN DU PUY",
+   "score": 98.6,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "BMX CORBENOIS PAYS D'ALENCON",
+   "score": 98.2,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "ACADEM",
+  "count": 721,
+  "best": {
+   "title": "KRONOS ACADEMY PARIS SACLAY",
+   "city": "SACLAY",
+   "score": 89.3,
+   "how": "word-prefix"
+  },
+  "second": {
+   "title": "FISE ACADEMY",
+   "score": 89.3,
+   "how": "word-prefix"
+  }
+ },
+ {
+  "code": "UVA",
+  "count": 655,
+  "best": {
+   "title": "UV ANGERIENNE",
+   "city": "17400 ST JEAN D ANGELY",
+   "score": 80,
+   "how": "prefix-title"
+  },
+  "second": {
+   "title": "UV AUCH GG",
+   "score": 80,
+   "how": "prefix-title"
+  }
+ },
+ {
+  "code": "STP3CH",
+  "count": 649,
+  "best": {
+   "title": "B.C. ST PAUL 3 CHATEAUX",
+   "city": "SAINT PAUL TROIS CHATEAUX",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "STMARC",
+  "count": 642,
+  "best": {
+   "title": "BMX MARCELLINOIS",
+   "city": "SAINT MARCELLIN EN FOREZ",
+   "score": 41.8,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "GRIZZLY BIKE MAURIENNE",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "MTDMAR",
+  "count": 638,
+  "best": {
+   "title": "STADE MONTOIS BMX",
+   "city": "MONT DE MARSAN",
+   "score": 43.6,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "SAINTE",
+  "count": 584,
+  "best": {
+   "title": "BMX CLUB SAINTAIS",
+   "city": "SAINTES",
+   "score": 99.3,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "VELO CLUB SAINTE ROSE",
+   "score": 99,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "TROYES",
+  "count": 574,
+  "best": {
+   "title": "BMX ROLLER SKATE TROYES",
+   "city": "TROYES",
+   "score": 99.4,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "U.V.C.A TROYES",
+   "score": 99.4,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "VALBMX",
+  "count": 574,
+  "best": {
+   "title": "VAL BMX",
+   "city": "TORCY",
+   "score": 80,
+   "how": "prefix-title"
+  },
+  "second": {
+   "title": "VALENCE CHABEUIL BMX CLUB",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "PRQBMX",
+  "count": 569,
+  "best": {
+   "title": "PRESQU'ILE BMX",
+   "city": "LA TURBALLE",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "STQUEN",
+  "count": 539,
+  "best": {
+   "title": "BMX DE SAINT QUENTIN",
+   "city": "SAINT QUENTIN",
+   "score": 43.6,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "TEAM POWER 76",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "STNOM",
+  "count": 509,
+  "best": {
+   "title": "BC ST NOM LA BRETECHE",
+   "city": "SAINT NOM LA BRETECHE",
+   "score": 42.4,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "SAINTE CONSORCE BMX TEAM",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "PTEVEQ",
+  "count": 441,
+  "best": {
+   "title": "BMX. PONT EVEQUE",
+   "city": "PONT EVEQUE",
+   "score": 52,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "VILLSG",
+  "count": 419,
+  "best": {
+   "title": "CC VILLENEUVE ST GERMAIN SOISSONS AISNE",
+   "city": "VILLENEUVE SAINT GERMAIN",
+   "score": 30,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "TEAM 94 CYCLING",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "PLOUAY",
+  "count": 415,
+  "best": {
+   "title": "ASSOCIATION PLOUAY CYCLISME FFC",
+   "city": "PLOUAY",
+   "score": 99.4,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "PLOUAY BMX",
+   "score": 99.4,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "BAUM-D",
+  "count": 413,
+  "best": {
+   "title": "A.V. BEAULIEU MANDEURE",
+   "city": "MANDEURE",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BAUME LES DAMES BMX",
+   "score": 35.4,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "STGEOR",
+  "count": 390,
+  "best": {
+   "title": "TEAM 94 CYCLING",
+   "city": "VILLENEUVE ST GEORGES",
+   "score": 66.2,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "CLUB AVENIR SAINT GEORGES",
+   "score": 41.4,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "LORIEN",
+  "count": 372,
+  "best": {
+   "title": "LORIENT BMX",
+   "city": "LORIENT",
+   "score": 99.3,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "VC PAYS DE LORIENT",
+   "score": 99.3,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "CSSD",
+  "count": 371,
+  "best": {
+   "title": "TEAM POWER 76",
+   "city": "SAINT JACQUES SUR DARNETAL",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "MER",
+  "count": 369,
+  "best": {
+   "title": "BICROSS CLUB MEROIS",
+   "city": "MER",
+   "score": 99.7,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "MERVILLE BCC",
+   "score": 99.2,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "CHGONT",
+  "count": 365,
+  "best": {
+   "title": "CHERBOURG BMX",
+   "city": "CHERBOURG EN COTENTIN",
+   "score": 30,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "BMX CHATEAU-GONTIER",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "FAMILY",
+  "count": 333,
+  "best": {
+   "title": "RIDIN'FAMILY",
+   "city": "LACROIX FALGARDE",
+   "score": 95,
+   "how": "word-exact"
+  },
+  "second": {
+   "title": "ALL ROAD FAMILY",
+   "score": 95,
+   "how": "word-exact"
+  }
+ },
+ {
+  "code": "BMXLUC",
+  "count": 316,
+  "best": {
+   "title": "BMX LUCOIS",
+   "city": "LE LUC EN PROVENCE",
+   "score": 80,
+   "how": "prefix-title"
+  },
+  "second": {
+   "title": "BMX CLUB COURNON D'AUVERGNE",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "CNTMAN",
+  "count": 315,
+  "best": {
+   "title": "CC VILLENEUVE ST GERMAIN SOISSONS AISNE",
+   "city": "VILLENEUVE SAINT GERMAIN",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BMX CENTRE MANCHE",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "BIKRAC",
+  "count": 296,
+  "best": {
+   "title": "BIKES RACING COUVROT",
+   "city": "COUVROT",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BIKE RACING ACADEMY",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "EABORD",
+  "count": 284,
+  "best": {
+   "title": "CJ MONT PRÈS CHAMBORD BMX",
+   "city": "ST CLAUDE DE DIRAY",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "EABESA",
+  "count": 278,
+  "best": {
+   "title": "AMSC UNIVERS PLUS",
+   "city": "LES ABYMES LES ABYMES",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "EASTBR",
+  "count": 229,
+  "best": {
+   "title": "CC ETUPES LE DOUBS PAYS DE MONTBELIARD",
+   "city": "ETUPES",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "EACOUR",
+  "count": 218,
+  "best": {
+   "title": "SPRINT CLUB DE MACOURIA",
+   "city": "TONATE-MACOURIA",
+   "score": 59.2,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "SLO BETTANCOURT",
+   "score": 42.2,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "PPVTTM",
+  "count": 204,
+  "best": {
+   "title": "PASSE PARTOUT VTT MACON",
+   "city": "MACON",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "DNNANT",
+  "count": 196,
+  "best": {
+   "title": "GUIDON SPRINTER CANALIEN CYCLING TEAM",
+   "city": "PETIT-CANAL",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "DNSTET",
+  "count": 181,
+  "best": {
+   "title": "GUIDON SPRINTER CANALIEN CYCLING TEAM",
+   "city": "PETIT-CANAL",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "EADARD",
+  "count": 178,
+  "best": {
+   "title": "CC ETUPES LE DOUBS PAYS DE MONTBELIARD",
+   "city": "ETUPES",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "GRSYNT",
+  "count": 149,
+  "best": {
+   "title": "O GRANDE SYNTHE",
+   "city": "GRANDE SYNTHE",
+   "score": 35.6,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "PEGASE",
+  "count": 143,
+  "best": {
+   "title": "US PEGOMAS CYCLISME",
+   "city": "PEGOMAS",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "ASCPIEG CMCAS EDF",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "EASTET",
+  "count": 137,
+  "best": {
+   "title": "TEAM CYCLISTE LINAS MONTLHERY",
+   "city": "LINAS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "EADINA",
+  "count": 134,
+  "best": {
+   "title": "ASSOCIATION SPORTIVE CULTURELLE ET ENTREAIDE SAINT MARTINOIS",
+   "city": "SAINT-MARTIN",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "GER",
+  "count": 121,
+  "best": {
+   "title": "GERZAT ARVERNE BMX",
+   "city": "GERZAT",
+   "score": 99.4,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "CORNIMONT BMX",
+   "score": 99.1,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "STJUNI",
+  "count": 113,
+  "best": {
+   "title": "AS ST JUNIEN BMX",
+   "city": "SAINT JUNIEN",
+   "score": 43.8,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "BC2000",
+  "count": 110,
+  "best": {
+   "title": "BICROSS 2000",
+   "city": "VILLEPARISIS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "PT-EVE",
+  "count": 104,
+  "best": {
+   "title": "BMX. PONT EVEQUE",
+   "city": "PONT EVEQUE",
+   "score": 52,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "B.C. PORTOIS",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "EABOUR",
+  "count": 84,
+  "best": {
+   "title": "A. CYCL. &amp; DE LA VERDURE DE P/BOURG",
+   "city": "PETIT-BOURG",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "ROCHEL",
+  "count": 81,
+  "best": {
+   "title": "BMX LA ROCHELLE",
+   "city": "AYTRE",
+   "score": 89.2,
+   "how": "word-prefix"
+  },
+  "second": {
+   "title": "BMX CLUB LA ROCHE SUR YON",
+   "score": 85,
+   "how": "code-has-word"
+  }
+ },
+ {
+  "code": "CMAUBE",
+  "count": 76,
+  "best": {
+   "title": "CM AUBERVILLIERS 93",
+   "city": "AUBERVILLIERS",
+   "score": 80,
+   "how": "prefix-title"
+  }
+ },
+ {
+  "code": "EASAVO",
+  "count": 68,
+  "best": {
+   "title": "LE MANS SARTHE VELO",
+   "city": "LE MANS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "GSCBLA",
+  "count": 60,
+  "best": {
+   "title": "GSC BLAGNAC VELO SPORT 31",
+   "city": "BLAGNAC",
+   "score": 80,
+   "how": "prefix-title"
+  }
+ },
+ {
+  "code": "AINCOT",
+  "count": 51,
+  "best": {
+   "title": "AIN'PULSION COTIERE BMX",
+   "city": "THIL",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "SAINTE CONSORCE BMX TEAM",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "PAUBMX",
+  "count": 49,
+  "best": {
+   "title": "PAU BMX CLUB",
+   "city": "PAU",
+   "score": 80,
+   "how": "prefix-title"
+  }
+ },
+ {
+  "code": "LMP-DN",
+  "count": 44,
+  "best": {
+   "title": "LEMPDES BMX AUVERGNE",
+   "city": "LEMPDES",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "S.C.OLYMPIQUE DE DIJON",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "BES-DN",
+  "count": 42,
+  "best": {
+   "title": "BMX CORBENOIS PAYS D'ALENCON",
+   "city": "ST GERMAIN DU CORBEIS",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "VELO CLUB DE SANDY GROUND",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "BES-EA",
+  "count": 42,
+  "best": {
+   "title": "BC MESSIGNY ET VANTOUX",
+   "city": "CLENAY SAINT JULIEN",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BMX CLUB LES PENNES MIRABEAU",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "EVO974",
+  "count": 41,
+  "best": {
+   "title": "TEAM EVO 974",
+   "city": "LA GARNACHE",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "BMXRID",
+  "count": 38,
+  "best": {
+   "title": "BMX RIDERS 07",
+   "city": "LAVILLEDIEU",
+   "score": 80,
+   "how": "prefix-title"
+  },
+  "second": {
+   "title": "BMX RIDING CLUB",
+   "score": 80,
+   "how": "prefix-title"
+  }
+ },
+ {
+  "code": "PDL-DN",
+  "count": 38,
+  "best": {
+   "title": "PEDALE DU LEVANT",
+   "city": "SAINT-FRANCOIS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "UBV-EA",
+  "count": 38,
+  "best": {
+   "title": "CLUB AVENIR SAINT GEORGES",
+   "city": "SAINT GEORGES SUR BAULCHES",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BMX CLUB AVIGNON LES ANGLES",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "CRETEI",
+  "count": 37,
+  "best": {
+   "title": "UCK VANNES BRETAGNE SUD CYCLISME",
+   "city": "VANNES",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "ASSOCIATION SPORTIVE CULTURELLE ET ENTREAIDE SAINT MARTINOIS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "DNLOUR",
+  "count": 36,
+  "best": {
+   "title": "ST DENIS CYCLISME",
+   "city": "SAINT DENIS LES BOURG",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "ANN-CC",
+  "count": 31,
+  "best": {
+   "title": "ANNECY BMX CLUB",
+   "city": "CRAN GEVRIER",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "UCK VANNES BRETAGNE SUD CYCLISME",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "NOA-EA",
+  "count": 31,
+  "best": {
+   "title": "KRONOS ACADEMY PARIS SACLAY",
+   "city": "SACLAY",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "NORMANDY BMX CLUB SOTTEVILLAIS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "SB-EA",
+  "count": 30,
+  "best": {
+   "title": "ARTIGUES VELO CLUB",
+   "city": "ARTIGUES PRES BORDEAUX",
+   "score": 30,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "BMX CLUB LES PENNES MIRABEAU",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "PDL-EA",
+  "count": 30,
+  "best": {
+   "title": "PEDALE DU LEVANT",
+   "city": "SAINT-FRANCOIS",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "PORT PEDALES ASSOCIATION",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "DEN",
+  "count": 28,
+  "best": {
+   "title": "BICROSS CLUB DENGUIN",
+   "city": "DENGUIN",
+   "score": 99.3,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "ST DENIS CYCLISME",
+   "score": 89.5,
+   "how": "word-prefix"
+  }
+ },
+ {
+  "code": "TOURAI",
+  "count": 28,
+  "best": {
+   "title": "MARIN TOURNAN BICROSS",
+   "city": "SOLERS",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "ASSOCIATION SPORTIVE CULTURELLE ET ENTREAIDE SAINT MARTINOIS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "TM29M",
+  "count": 27,
+  "best": {
+   "title": "TEAM.MANAGER 29 M",
+   "city": "BAIE MAHAULT",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "DAR-EA",
+  "count": 27,
+  "best": {
+   "title": "TEAM POWER 76",
+   "city": "SAINT JACQUES SUR DARNETAL",
+   "score": 49.4,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "POR",
+  "count": 23,
+  "best": {
+   "title": "B.C. PORTOIS",
+   "city": "PORTES LES VALENCE",
+   "score": 98.4,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "PORT PEDALES ASSOCIATION",
+   "score": 89.6,
+   "how": "word-prefix"
+  }
+ },
+ {
+  "code": "COL",
+  "count": 22,
+  "best": {
+   "title": "ENTENTE CYCLISTE COLMAR",
+   "city": "COLMAR",
+   "score": 99.4,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "CC Pays Vesoul Hte-Saône",
+   "score": 98.4,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "LET",
+  "count": 22,
+  "best": {
+   "title": "VELO CLUB DU TAMPON",
+   "city": "LE TAMPON",
+   "score": 99.2,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "AS TREPORT CYCLISME",
+   "score": 99.1,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "SE-FRE",
+  "count": 21,
+  "best": {
+   "title": "PAYS DE FOUGERES CYCLISME",
+   "city": "FOUGERES",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BMX MARCELLINOIS",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "NOR",
+  "count": 20,
+  "best": {
+   "title": "NORD BMX CLUB",
+   "city": "59700 MARCQ EN BAREUIL",
+   "score": 89.6,
+   "how": "word-prefix"
+  },
+  "second": {
+   "title": "NORMANDY BMX CLUB SOTTEVILLAIS",
+   "score": 89.2,
+   "how": "word-prefix"
+  }
+ },
+ {
+  "code": "AUBE93",
+  "count": 19,
+  "best": {
+   "title": "CM AUBERVILLIERS 93",
+   "city": "AUBERVILLIERS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "CHA-EA",
+  "count": 19,
+  "best": {
+   "title": "BC CASTELROUSSIN",
+   "city": "CHATEAUROUX",
+   "score": 59.8,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "B.C. ST PAUL 3 CHATEAUX",
+   "score": 57.6,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "USP-DN",
+  "count": 18,
+  "best": {
+   "title": "CC ETUPES LE DOUBS PAYS DE MONTBELIARD",
+   "city": "ETUPES",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "CLUB SPORTIF SAINT DENIS BMX 974",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "TEAM94",
+  "count": 15,
+  "best": {
+   "title": "SAINTE CONSORCE BMX TEAM",
+   "city": "STE CONSORCE",
+   "score": 85,
+   "how": "code-has-word"
+  },
+  "second": {
+   "title": "TEAM ACIGNE BMX",
+   "score": 85,
+   "how": "code-has-word"
+  }
+ },
+ {
+  "code": "GER-DN",
+  "count": 15,
+  "best": {
+   "title": "SAINT LEGER BMX",
+   "city": "ST LEGER DE LA MARTINIERE 79500",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "MON-DN",
+  "count": 14,
+  "best": {
+   "title": "BMX CLUB COURNON D'AUVERGNE",
+   "city": "COURNON D'AUVERGNE CEDEX",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BMX CORBENOIS PAYS D'ALENCON",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "BOL-DN",
+  "count": 14,
+  "best": {
+   "title": "ESC BICROSS CLUB DE  MARTRAGNY",
+   "city": "MOULINS EN BESSIN",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BICROSS CLUB DU TERRASSONNAIS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "CACIEN",
+  "count": 13,
+  "best": {
+   "title": "ASSOCIATION CYCLISTE LEONARDE",
+   "city": "MESPAUL",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BMX CLUB DE MARCHIENNES",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "CVL-DN",
+  "count": 12,
+  "best": {
+   "title": "ASSOCIATION SPORTIVE CULTURELLE ET ENTREAIDE SAINT MARTINOIS",
+   "city": "SAINT-MARTIN",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "VTTLIE",
+  "count": 11,
+  "best": {
+   "title": "BMX VTT LIMONEST",
+   "city": "LIMONEST",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "AMICALE VITROLLES SPORT CYCLISME",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "RANDO",
+  "count": 11,
+  "best": {
+   "title": "LACHTOUTEAM CVN",
+   "city": "LA GRAND COMBE",
+   "score": 59.6,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "NORMANDY BMX CLUB SOTTEVILLAIS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "BMXORG",
+  "count": 10,
+  "best": {
+   "title": "BMX ORGANISATION",
+   "city": "PERNES LES FONTAINES",
+   "score": 80,
+   "how": "prefix-title"
+  },
+  "second": {
+   "title": "BMX CLUB COURNON D'AUVERGNE",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "SR-BMX",
+  "count": 10,
+  "best": {
+   "title": "AIN'PULSION COTIERE BMX",
+   "city": "THIL",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "U. S. ISSOIRE BMX",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "LAMENT",
+  "count": 9,
+  "best": {
+   "title": "ANGE DU VELO",
+   "city": "LAMENTIN",
+   "score": 99.2,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "UNI SPORT LAMENTINOIS",
+   "score": 99.2,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "FEI-PI",
+  "count": 8,
+  "best": {
+   "title": "FREE BIKE DAMPIERROIS",
+   "city": "DAMPIERRE EN BURLY",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "REDOC",
+  "count": 8,
+  "best": {
+   "title": "PORT PEDALES ASSOCIATION",
+   "city": "LE PORT CEDEX",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "EVRON",
+  "count": 8,
+  "best": {
+   "title": "CC VILLENEUVE ST GERMAIN SOISSONS AISNE",
+   "city": "VILLENEUVE SAINT GERMAIN",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BMX NEUVILLE",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "ROU-DN",
+  "count": 8,
+  "best": {
+   "title": "ESC BICROSS CLUB DE  MARTRAGNY",
+   "city": "MOULINS EN BESSIN",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BICROSS CLUB DU TERRASSONNAIS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "DINAN",
+  "count": 7,
+  "best": {
+   "title": "ASSOCIATION SPORTIVE CULTURELLE ET ENTREAIDE SAINT MARTINOIS",
+   "city": "SAINT-MARTIN",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "GUIDON SPRINTER CANALIEN CYCLING TEAM",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "L-ODET",
+  "count": 7,
+  "best": {
+   "title": "CC ETUPES LE DOUBS PAYS DE MONTBELIARD",
+   "city": "ETUPES",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "LOURDES VTT",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "TAIN",
+  "count": 5,
+  "best": {
+   "title": "BMX ORGANISATION",
+   "city": "PERNES LES FONTAINES",
+   "score": 66.4,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "BMX PERNOIS",
+   "score": 66.4,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "CORBAS",
+  "count": 5,
+  "best": {
+   "title": "BMX CORBENOIS PAYS D'ALENCON",
+   "city": "ST GERMAIN DU CORBEIS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "ARG",
+  "count": 5,
+  "best": {
+   "title": "ARGENTAN BMX",
+   "city": "ARGENTAN",
+   "score": 99.2,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "RAYON D'ARGENT",
+   "score": 89.4,
+   "how": "word-prefix"
+  }
+ },
+ {
+  "code": "VCSNT",
+  "count": 5,
+  "best": {
+   "title": "VC PAYS DE LORIENT",
+   "city": "LORIENT",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "ASSOCIATION SPORTIVE CULTURELLE ET ENTREAIDE SAINT MARTINOIS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "ESC BICROSS CLUB DE  MARTRAGNY",
+  "count": 4,
+  "best": {
+   "title": "ESC BICROSS CLUB DE  MARTRAGNY",
+   "city": "MOULINS EN BESSIN",
+   "score": 80,
+   "how": "prefix-title"
+  }
+ },
+ {
+  "code": "CTRMCH",
+  "count": 4,
+  "best": {
+   "title": "BMX CENTRE MANCHE",
+   "city": "LA HAYE DU PUITS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "POLY",
+  "count": 4,
+  "best": {
+   "title": "BMX RIDING CLUB",
+   "city": "PONT D OUILLY",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "NICECA",
+  "count": 3,
+  "best": {
+   "title": "GUIDON SPRINTER CANALIEN CYCLING TEAM",
+   "city": "PETIT-CANAL",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "BMX CENTRE MANCHE",
+  "count": 2,
+  "best": {
+   "title": "BMX CENTRE MANCHE",
+   "city": "LA HAYE DU PUITS",
+   "score": 80,
+   "how": "prefix-title"
+  }
+ },
+ {
+  "code": "CASTRE",
+  "count": 2,
+  "best": {
+   "title": "CLUB AVENIR SAINT GEORGES",
+   "city": "SAINT GEORGES SUR BAULCHES",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "ASSOCIATION CYCLISTE LEONARDE",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "LUCEEN",
+  "count": 2,
+  "best": {
+   "title": "BMX LUCOIS",
+   "city": "LE LUC EN PROVENCE",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "TARBES",
+  "count": 2,
+  "best": {
+   "title": "BARBAZAN BMX",
+   "city": "TARBES",
+   "score": 99.4,
+   "how": "prefix-city"
+  },
+  "second": {
+   "title": "TARBES CYCLISTE",
+   "score": 99.4,
+   "how": "prefix-city"
+  }
+ },
+ {
+  "code": "UNITM",
+  "count": 1,
+  "best": {
+   "title": "SOUES OMNISPORT BMX",
+   "city": "SOUES",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "ASSOCIATION SPORTIVE CULTURELLE ET ENTREAIDE SAINT MARTINOIS",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "MEUSE",
+  "count": 1,
+  "best": {
+   "title": "BMX BAILLEUL SUR THERAIN",
+   "city": "BAILLEUL SUR THERAIN",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BMX MOURS-ROMANS",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "UBAYE",
+  "count": 1,
+  "best": {
+   "title": "CC ETUPES LE DOUBS PAYS DE MONTBELIARD",
+   "city": "ETUPES",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "UCK VANNES BRETAGNE SUD CYCLISME",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "CHAUCH",
+  "count": 1,
+  "best": {
+   "title": "AS CHANCEAUX BMX",
+   "city": "CHANCEAUX SUR CHOISILLE",
+   "score": 30,
+   "how": "subseq-city"
+  },
+  "second": {
+   "title": "AZAY BMX CLUB",
+   "score": 30,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "CHABL",
+  "count": 1,
+  "best": {
+   "title": "VALENCE CHABEUIL BMX CLUB",
+   "city": "CHABEUIL",
+   "score": 44.4,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "STLOUI",
+  "count": 1,
+  "best": {
+   "title": "ASSOCIATION PLOUAY CYCLISME FFC",
+   "city": "PLOUAY",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "BC CASTELROUSSIN",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "BESSE",
+  "count": 1,
+  "best": {
+   "title": "BC MESSIGNY ET VANTOUX",
+   "city": "CLENAY SAINT JULIEN",
+   "score": 40,
+   "how": "subseq-title"
+  },
+  "second": {
+   "title": "UCK VANNES BRETAGNE SUD CYCLISME",
+   "score": 40,
+   "how": "subseq-title"
+  }
+ },
+ {
+  "code": "CRNGEV",
+  "count": 1,
+  "best": {
+   "title": "ANNECY BMX CLUB",
+   "city": "CRAN GEVRIER",
+   "score": 59.8,
+   "how": "subseq-city"
+  }
+ },
+ {
+  "code": "VELOCE",
+  "count": 1,
+  "best": {
+   "title": "ARTIGUES VELO CLUB",
+   "city": "ARTIGUES PRES BORDEAUX",
+   "score": 85,
+   "how": "code-has-word"
+  },
+  "second": {
+   "title": "AVENSAN VELO NATURE",
+   "score": 85,
+   "how": "code-has-word"
+  }
+ }
+]
