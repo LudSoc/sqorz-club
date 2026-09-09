@@ -1263,10 +1263,14 @@ footer a:hover{text-decoration:underline}
 
   // --- Tableau HTML ---
   function buildTableHtml(pilots, totalWins, totalPodiums) {
+    // En vue « Toutes » (toutes années), la catégorie dominante n'a pas de sens
+    // (un pilote change de catégorie d'une année à l'autre) : colonne masquée.
+    const showCat = yearFilter.size > 0;
+    if (!showCat && sortCol === 'cat') { sortCol = 'wins'; sortDir = 'desc'; }
     const cols = [
       { key: null,       label: '#',           nosort: true },
       { key: 'name',     label: 'Nom' },
-      { key: 'cat',      label: 'Catégorie',   title: 'Catégorie dominante' },
+      ...(showCat ? [{ key: 'cat', label: 'Catégorie', title: 'Catégorie dominante' }] : []),
       { key: null,       label: 'Années',      nosort: true },
       { key: 'entries',  label: 'Particip.',   title: 'Participations' },
       { key: 'wins',     label: 'Victoires' },
@@ -1296,7 +1300,7 @@ footer a:hover{text-decoration:underline}
       return `<tr class="pilot-row" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' ')this.click()">
         <td>${rankCell}</td>
         <td>${nameCell}</td>
-        <td style="text-align:left;font-size:11.5px;color:var(--muted)">${escape(classLabel(pilot.dominantCode))}</td>
+        ${showCat ? `<td style="text-align:left;font-size:11.5px;color:var(--muted)">${escape(classLabel(pilot.dominantCode))}</td>` : ''}
         <td style="text-align:left;white-space:nowrap">${pilot.years.map(y => `<span style="display:inline-block;font-size:10.5px;font-weight:600;padding:1px 6px;border-radius:99px;background:var(--card-soft);border:1px solid var(--line-strong);color:var(--ink-2);margin-right:2px">${escape(y)}</span>`).join('')}</td>
         <td>${s.entries}</td>
         <td>${winsCell}</td>
